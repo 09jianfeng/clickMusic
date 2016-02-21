@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9757A951-F3D6-481A-B826-F93E727F295C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TapPad</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2AA1CF989F3A3E7194D792421C70D524F46B5486</key>
+		<string>git.umlife.net:yebaojia/xiaozhshouMajia.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>小助手马甲/米鹿小助手/clickmusic/TapPad.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2AA1CF989F3A3E7194D792421C70D524F46B5486</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git.umlife.net:yebaojia/xiaozhshouMajia.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2AA1CF989F3A3E7194D792421C70D524F46B5486</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2AA1CF989F3A3E7194D792421C70D524F46B5486</string>
+			<key>IDESourceControlWCCName</key>
+			<string>xiaozhshouMajia</string>
+		</dict>
+	</array>
+</dict>
+</plist>
