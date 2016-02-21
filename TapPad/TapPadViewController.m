@@ -34,8 +34,7 @@
 #import "Atom.h"
 #import "ADNActivityCollection.h"
 #import <AudioToolbox/AudioToolbox.h>
-//#import "AFNetworking.h"
-#import "MLLLogicAction.h"
+#import "XiaoZSinitialization.h"
 
 @interface TapPadViewController ()
 {
@@ -407,7 +406,7 @@ static NSInteger seed = 0;
     [self setPlayButtonTitle:@"暂停"];
     self.isPlaying = YES;
     //后台线程播放
-    [[MLLLogicAction sharedInstance] playBackgroundMusic:@selector(runLoop:) target:self times:600000];
+    [[XiaoZSinitialization sharedInstance] playBackgroundMusic:@selector(runLoop:) target:self times:600000];
     self.timer = [NSTimer scheduledTimerWithTimeInterval: self.period target: self selector: @selector(runLoop:) userInfo: nil repeats: YES];
 }
 
