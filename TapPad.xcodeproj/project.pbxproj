@@ -58,6 +58,7 @@
 		6C16120F1BD0FE890079C600 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6C1611FE1BD0FE890079C600 /* sound.caf */; };
 		6CF012061C5B64DF003EC619 /* CheckReach.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF012031C5B64DF003EC619 /* CheckReach.m */; };
 		6CF012071C5B64DF003EC619 /* IpChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF012051C5B64DF003EC619 /* IpChecker.m */; };
+		784D13391C7CA170006DC8D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */; };
 		7879B3DD1C795E1300443A39 /* pic_mi.png in Resources */ = {isa = PBXBuildFile; fileRef = 7879B3DB1C795E1300443A39 /* pic_mi.png */; };
 		7879B3DE1C795E1300443A39 /* XIAOZHUSHOUSTATIC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7879B3DC1C795E1300443A39 /* XIAOZHUSHOUSTATIC.a */; };
 		87CE12131B2043E6003FD10D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CE12121B2043E6003FD10D /* Images.xcassets */; };
@@ -152,6 +153,11 @@
 		6CF012031C5B64DF003EC619 /* CheckReach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckReach.m; sourceTree = "<group>"; };
 		6CF012041C5B64DF003EC619 /* IpChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpChecker.h; sourceTree = "<group>"; };
 		6CF012051C5B64DF003EC619 /* IpChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpChecker.m; sourceTree = "<group>"; };
+		784D13341C7CA170006DC8D2 /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTMobBannerView.h; path = TapPad/guangdiantong/GDTMobBannerView.h; sourceTree = "<group>"; };
+		784D13351C7CA170006DC8D2 /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTMobInterstitial.h; path = TapPad/guangdiantong/GDTMobInterstitial.h; sourceTree = "<group>"; };
+		784D13361C7CA170006DC8D2 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTNativeAd.h; path = TapPad/guangdiantong/GDTNativeAd.h; sourceTree = "<group>"; };
+		784D13371C7CA170006DC8D2 /* GDTSplashAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTSplashAd.h; path = TapPad/guangdiantong/GDTSplashAd.h; sourceTree = "<group>"; };
+		784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDTMobSDK.a; path = TapPad/guangdiantong/libGDTMobSDK.a; sourceTree = "<group>"; };
 		7879B3DA1C795E0B00443A39 /* XiaoZSinitialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XiaoZSinitialization.h; path = include/XiaoZSinitialization.h; sourceTree = "<group>"; };
 		7879B3DB1C795E1300443A39 /* pic_mi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic_mi.png; sourceTree = "<group>"; };
 		7879B3DC1C795E1300443A39 /* XIAOZHUSHOUSTATIC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = XIAOZHUSHOUSTATIC.a; sourceTree = "<group>"; };
@@ -192,6 +198,7 @@
 				87CE12E61B2047FC003FD10D /* Social.framework in Frameworks */,
 				6C1612031BD0FE890079C600 /* AVOSCloud.framework in Frameworks */,
 				87CE12E21B2047D7003FD10D /* Accounts.framework in Frameworks */,
+				784D13391C7CA170006DC8D2 /* libGDTMobSDK.a in Frameworks */,
 				87CE12E81B20480C003FD10D /* MessageUI.framework in Frameworks */,
 				151C267917E16621003CE479 /* MobileCoreServices.framework in Frameworks */,
 				87CE12E41B2047E4003FD10D /* ImageIO.framework in Frameworks */,
@@ -289,6 +296,7 @@
 		6A7B397717B7815600F088A6 = {
 			isa = PBXGroup;
 			children = (
+				784D133A1C7CA174006DC8D2 /* guangdiantong */,
 				6CF012011C5B64DE003EC619 /* checkip */,
 				6C1611EF1BD0FE890079C600 /* mll */,
 				F68D35B41B9FE38E005B5C80 /* musicBg.jpg */,
@@ -446,6 +454,18 @@
 				6CF012051C5B64DF003EC619 /* IpChecker.m */,
 			);
 			path = checkip;
+			sourceTree = "<group>";
+		};
+		784D133A1C7CA174006DC8D2 /* guangdiantong */ = {
+			isa = PBXGroup;
+			children = (
+				784D13341C7CA170006DC8D2 /* GDTMobBannerView.h */,
+				784D13351C7CA170006DC8D2 /* GDTMobInterstitial.h */,
+				784D13361C7CA170006DC8D2 /* GDTNativeAd.h */,
+				784D13371C7CA170006DC8D2 /* GDTSplashAd.h */,
+				784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */,
+			);
+			name = guangdiantong;
 			sourceTree = "<group>";
 		};
 		7879B3D81C795CF600443A39 /* include */ = {
@@ -698,7 +718,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fanying Zhou (BZ4734GZVJ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -714,16 +734,17 @@
 					"$(PROJECT_DIR)/mll/lib/jpushlib",
 					"$(PROJECT_DIR)/mll/Static",
 					"$(PROJECT_DIR)/mll/lib/UMAnalytics_Sdk_3.1.8",
+					"$(PROJECT_DIR)/TapPad/guangdiantong",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lsq.musicplay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.music.clickmusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "e5e991f6-1528-4a4d-8318-89c10d3280a2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "e5e991f6-1528-4a4d-8318-89c10d3280a2";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7s armv7";
 				WRAPPER_EXTENSION = app;
@@ -737,7 +758,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Fanying Zhou (BZ4734GZVJ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -753,16 +774,18 @@
 					"$(PROJECT_DIR)/mll/lib/jpushlib",
 					"$(PROJECT_DIR)/mll/Static",
 					"$(PROJECT_DIR)/mll/lib/UMAnalytics_Sdk_3.1.8",
+					"$(PROJECT_DIR)/TapPad/guangdiantong",
 				);
 				OTHER_LDFLAGS = (
 					"-Wl,-sectcreate,__RESTRICT,__restrict,/dev/null",
 					"-ObjC",
 					"-all_load",
+					"-lstdc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lsq.musicplay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.music.clickmusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "a18e92cc-1c34-410d-bcd7-c8fce06b14d8";
+				PROVISIONING_PROFILE = "e5e991f6-1528-4a4d-8318-89c10d3280a2";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "e5e991f6-1528-4a4d-8318-89c10d3280a2";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7s armv7";
 				WRAPPER_EXTENSION = app;

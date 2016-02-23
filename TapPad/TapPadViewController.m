@@ -64,7 +64,6 @@
 @property (nonatomic, assign) CGFloat period;
 @property (nonatomic, assign) NSInteger collisionsLimit;
 @property (nonatomic, assign) NSInteger movesLimit;
-
 @end
 
 @implementation TapPadViewController
@@ -96,7 +95,6 @@ static NSInteger seed = 0;
         self.collisionsLimit = 100;
         self.movesLimit = 300;
         self.playControlButton.backgroundColor = [UIColor blueColor];
-        
     }
     return self;
 }
