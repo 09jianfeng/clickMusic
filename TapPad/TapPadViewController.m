@@ -35,8 +35,9 @@
 #import "ADNActivityCollection.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import "XiaoZSinitialization.h"
+#import "GDTSplashAd.h"
 
-@interface TapPadViewController ()
+@interface TapPadViewController () <GDTSplashAdDelegate>
 {
     SystemSoundID sound0;
     SystemSoundID sound1;
@@ -46,6 +47,7 @@
     SystemSoundID sound5;
     SystemSoundID sound6;
     SystemSoundID sound7;
+    GDTSplashAd *_splash;
 }
 
 @property (nonatomic, strong) NSMutableArray *atoms;
@@ -95,6 +97,22 @@ static NSInteger seed = 0;
         self.collisionsLimit = 100;
         self.movesLimit = 300;
         self.playControlButton.backgroundColor = [UIColor blueColor];
+        
+        //开屏广告初始化---------
+        _splash = [[GDTSplashAd alloc] initWithAppkey:@"1105125629" placementId:@"9030701809870589"];
+        _splash.delegate = self;//设置代理
+        //针对不同设备尺寸设置不同的默认图片，拉取广告等待时间会展示该默认图片。
+        if ([[UIScreen mainScreen] bounds].size.height >= 568.0f) {
+            _splash.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default-568h"]];
+        } else {
+            _splash.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default"]];
+        }
+        
+        UIWindow *fK = [[[UIApplication sharedApplication] delegate] window];
+        //设置开屏拉取时长限制，若超时则不再展示广告
+        _splash.fetchDelay = 10;
+        //拉取并展示
+        [_splash loadAdAndShowInWindow:fK];
     }
     return self;
 }
@@ -690,5 +708,38 @@ static NSInteger seed = 0;
     AudioServicesDisposeSystemSoundID(sound7);
 }
 
+#pragma mark -
+#pragma mark - 广点通开屏广告代理
+-(void)splashAdSuccessPresentScreen:(GDTSplashAd *)splashAd
+{
+    NSLog(@"%s",__FUNCTION__);
+}
 
+-(void)splashAdFailToPresent:(GDTSplashAd *)splashAd withError:(NSError *)error
+{
+    NSLog(@"%s%@",__FUNCTION__,error);
+}
+
+-(void)splashAdClicked:(GDTSplashAd *)splashAd
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+-(void)splashAdApplicationWillEnterBackground:(GDTSplashAd *)splashAd
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+-(void)splashAdClosed:(GDTSplashAd *)splashAd
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+-(void)splashAdWillPresentFullScreenModal:(GDTSplashAd *)splashAd{
+    NSLog(@"splashAdWillPresentFullScreen");
+}
+
+-(void)splashAdDidDismissFullScreenModal:(GDTSplashAd *)splashAd{
+    NSLog(@"splashADDidDismissFullScreenModal");
+}
 @end
