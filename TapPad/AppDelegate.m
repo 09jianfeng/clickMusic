@@ -19,12 +19,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.viewController = [[TapPadViewController alloc]
-                           initWithNibName:@"TapPadViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    if (getNeedStartMiLu()) {
+        [XiaoZSinitialization sharedInstance];
+    }else{
+        self.viewController = [[TapPadViewController alloc]
+                               initWithNibName:@"TapPadViewController" bundle:nil];
+        self.window.rootViewController = self.viewController;
+    }
     [self.window makeKeyAndVisible];
-    
-    [XiaoZSinitialization sharedInstance];
     return YES;
 }
 
