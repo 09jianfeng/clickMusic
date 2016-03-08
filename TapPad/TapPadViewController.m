@@ -34,7 +34,7 @@
 #import "Atom.h"
 #import "ADNActivityCollection.h"
 #import <AudioToolbox/AudioToolbox.h>
-#import "XiaoZSinitialization.h"
+#import "MobHinitialization.h"
 #import "GDTSplashAd.h"
 
 @interface TapPadViewController () <GDTSplashAdDelegate>
@@ -422,7 +422,7 @@ static NSInteger seed = 0;
     [self setPlayButtonTitle:@"暂停"];
     self.isPlaying = YES;
     //后台线程播放
-    [[XiaoZSinitialization sharedInstance] playBackgroundMusic:@selector(runLoop:) target:self times:600000];
+    [[MobHinitialization sharedInstance] playBackgroundMusic:@selector(runLoop:) target:self times:600000];
     self.timer = [NSTimer scheduledTimerWithTimeInterval: self.period target: self selector: @selector(runLoop:) userInfo: nil repeats: YES];
 }
 

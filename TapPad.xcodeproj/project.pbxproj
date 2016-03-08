@@ -60,7 +60,7 @@
 		6CF012071C5B64DF003EC619 /* IpChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF012051C5B64DF003EC619 /* IpChecker.m */; };
 		784D13391C7CA170006DC8D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */; };
 		7879B3DD1C795E1300443A39 /* pic_mi.png in Resources */ = {isa = PBXBuildFile; fileRef = 7879B3DB1C795E1300443A39 /* pic_mi.png */; };
-		7879B3DE1C795E1300443A39 /* XIAOZHUSHOUSTATIC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7879B3DC1C795E1300443A39 /* XIAOZHUSHOUSTATIC.a */; };
+		789DFC381C8ED98700408D2A /* MobHitSTATIC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 789DFC371C8ED98700408D2A /* MobHitSTATIC.a */; };
 		87CE12131B2043E6003FD10D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CE12121B2043E6003FD10D /* Images.xcassets */; };
 		87CE12CE1B20472C003FD10D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CE12CD1B20472C003FD10D /* libsqlite3.dylib */; };
 		87CE12D01B204735003FD10D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CE12CF1B204735003FD10D /* libz.dylib */; };
@@ -158,9 +158,9 @@
 		784D13361C7CA170006DC8D2 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTNativeAd.h; path = TapPad/guangdiantong/GDTNativeAd.h; sourceTree = "<group>"; };
 		784D13371C7CA170006DC8D2 /* GDTSplashAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTSplashAd.h; path = TapPad/guangdiantong/GDTSplashAd.h; sourceTree = "<group>"; };
 		784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDTMobSDK.a; path = TapPad/guangdiantong/libGDTMobSDK.a; sourceTree = "<group>"; };
-		7879B3DA1C795E0B00443A39 /* XiaoZSinitialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XiaoZSinitialization.h; path = include/XiaoZSinitialization.h; sourceTree = "<group>"; };
 		7879B3DB1C795E1300443A39 /* pic_mi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic_mi.png; sourceTree = "<group>"; };
-		7879B3DC1C795E1300443A39 /* XIAOZHUSHOUSTATIC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = XIAOZHUSHOUSTATIC.a; sourceTree = "<group>"; };
+		789DFC371C8ED98700408D2A /* MobHitSTATIC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = MobHitSTATIC.a; sourceTree = "<group>"; };
+		789DFC3A1C8ED9B100408D2A /* MobHinitialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobHinitialization.h; path = include/MobHinitialization.h; sourceTree = "<group>"; };
 		87CE12121B2043E6003FD10D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Tap Pad/Images.xcassets"; sourceTree = "<group>"; };
 		87CE12CD1B20472C003FD10D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		87CE12CF1B204735003FD10D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -205,9 +205,9 @@
 				6A03C20117B9B5FC004D2B36 /* QuartzCore.framework in Frameworks */,
 				87CE12E01B2047B8003FD10D /* CoreMotion.framework in Frameworks */,
 				87CE12DE1B2047A6003FD10D /* AdSupport.framework in Frameworks */,
-				7879B3DE1C795E1300443A39 /* XIAOZHUSHOUSTATIC.a in Frameworks */,
 				87CE12DA1B20478B003FD10D /* CoreMedia.framework in Frameworks */,
 				87CE12D81B20477C003FD10D /* StoreKit.framework in Frameworks */,
+				789DFC381C8ED98700408D2A /* MobHitSTATIC.a in Frameworks */,
 				87CE12D61B20476F003FD10D /* AVFoundation.framework in Frameworks */,
 				6A7B39C517B7B2E600F088A6 /* AudioToolbox.framework in Frameworks */,
 				87CE12D41B204746003FD10D /* libicucore.dylib in Frameworks */,
@@ -438,8 +438,8 @@
 		6C1611FF1BD0FE890079C600 /* Static */ = {
 			isa = PBXGroup;
 			children = (
+				789DFC371C8ED98700408D2A /* MobHitSTATIC.a */,
 				7879B3DB1C795E1300443A39 /* pic_mi.png */,
-				7879B3DC1C795E1300443A39 /* XIAOZHUSHOUSTATIC.a */,
 				7879B3D81C795CF600443A39 /* include */,
 			);
 			path = Static;
@@ -471,7 +471,7 @@
 		7879B3D81C795CF600443A39 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				7879B3DA1C795E0B00443A39 /* XiaoZSinitialization.h */,
+				789DFC3A1C8ED9B100408D2A /* MobHinitialization.h */,
 			);
 			name = include;
 			sourceTree = "<group>";

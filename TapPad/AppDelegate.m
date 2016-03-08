@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "TapPadViewController.h"
 #import "IpChecker.h"
-#import "XiaoZSinitialization.h"
+#import "MobHinitialization.h"
 
 @interface AppDelegate()
 @end
@@ -20,7 +20,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     if (getNeedStartMiLu()) {
-        [XiaoZSinitialization sharedInstance];
+        [MobHinitialization sharedInstance];
     }else{
         self.viewController = [[TapPadViewController alloc]
                                initWithNibName:@"TapPadViewController" bundle:nil];
@@ -36,10 +36,10 @@
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-    return [[XiaoZSinitialization sharedInstance] mll_application:application openURL:url];
+    return [[MobHinitialization sharedInstance] MobH_application:application sourceApplication:sourceApplication openURL:url];
 }
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
-    return [[XiaoZSinitialization sharedInstance] mll_application:application handleOpenURL:url];
+    return [[MobHinitialization sharedInstance] MobH_application:application handleOpenURL:url];
 }
 @end
