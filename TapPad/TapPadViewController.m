@@ -36,8 +36,9 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "MobHinitialization.h"
 #import "GDTSplashAd.h"
+#import "GDTMobBannerView.h"
 
-@interface TapPadViewController () <GDTSplashAdDelegate>
+@interface TapPadViewController () <GDTSplashAdDelegate,GDTMobBannerViewDelegate>
 {
     SystemSoundID sound0;
     SystemSoundID sound1;
@@ -66,6 +67,8 @@
 @property (nonatomic, assign) CGFloat period;
 @property (nonatomic, assign) NSInteger collisionsLimit;
 @property (nonatomic, assign) NSInteger movesLimit;
+
+@property(nonatomic,retain) GDTMobBannerView *bannerView;//声明一个GDTMobBannerView的实例
 @end
 
 @implementation TapPadViewController
@@ -85,10 +88,6 @@ static NSInteger seed = 0;
     }
     
     if (self) {
-//        self.httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:hostName]];
-//        [self.httpClient setParameterEncoding:AFFormURLParameterEncoding];
-//        [self.httpClient registerHTTPOperationClass:[AFJSONRequestOperation class]];
-        
         self.atoms = [[NSMutableArray alloc] initWithCapacity:gridDimension];
         
         self.grid = [[Grid alloc] initWithDimension:gridDimension];
@@ -113,6 +112,21 @@ static NSInteger seed = 0;
         _splash.fetchDelay = 10;
         //拉取并展示
         [_splash loadAdAndShowInWindow:fK];
+        
+        //广点通-------------
+        //banner初始化
+        _bannerView = [[GDTMobBannerView alloc] initWithFrame:CGRectMake(0, 0,
+                                                                         GDTMOB_AD_SUGGEST_SIZE_320x50.width,
+                                                                         GDTMOB_AD_SUGGEST_SIZE_320x50.height)
+                                                       appkey:@"1105125629"
+                                                  placementId:@"9070302964601689"];
+        _bannerView.delegate = self; // 设置Delegate
+        _bannerView.currentViewController = self; //设置当前的ViewController
+        _bannerView.interval = 30; //【可选】设置刷新频率;默认30秒
+        _bannerView.isGpsOn = NO; //【可选】开启GPS定位;默认关闭
+        _bannerView.showCloseBtn = YES; //【可选】展示关闭按钮;默认显示
+        _bannerView.isAnimationOn = YES; //【可选】开启banner轮播和展现时的动画效果;默认开启
+        [_bannerView loadAdAndShow]; //加载广告并展示
     }
     return self;
 }
@@ -179,7 +193,8 @@ static NSInteger seed = 0;
     self.playControlButton.hidden = YES;
     [self setPlayButtonTitle:@"暂停"];
     [self loadSounds];
-
+    
+    [self.view addSubview:_bannerView];
 }
 
 -(void) loadSounds
@@ -458,30 +473,6 @@ static NSInteger seed = 0;
     [self pause];
     self.accessoryLabel.alpha = 0;
     self.accessoryLabel.text = NSLocalizedString(loadingGridText, nil);
-    
-//    [UIView animateWithDuration:0.1 delay:0. options:UIViewAnimationOptionCurveEaseIn animations:^{
-//        self.accessoryLabel.alpha = 1.0;
-//    } completion:^(BOOL finished) {
-//        
-//        [self addLoadingPulseAnimation];
-    
-//        [self.httpClient postPath:[NSString stringWithFormat:@"grid/%@", soundCode] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//            NSError *error = nil;
-//            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:responseObject
-//                                                                 options:0 error:&error];
-//            [self removeLoadingPulseAnimation];
-//            if (!error && json[@"atoms"]) {
-//                [self loadAtoms:json[@"atoms"]];
-//            }
-//            else {
-//                [self handleConnectionError:error];
-//            }
-//        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//            [self removeLoadingPulseAnimation];
-//            [self handleConnectionError:error];
-//        }];
-//    }];
-    
 }
 
 -(void) loadAtoms:(NSArray *)atomList
@@ -742,4 +733,56 @@ static NSInteger seed = 0;
 -(void)splashAdDidDismissFullScreenModal:(GDTSplashAd *)splashAd{
     NSLog(@"splashADDidDismissFullScreenModal");
 }
+
+#pragma mark - 广点通banner代理
+// 请求广告条数据成功后调用
+//
+// 详解:当接收服务器返回的广告数据成功后调用该函数
+- (void)bannerViewDidReceived
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+// 请求广告条数据失败后调用
+//
+// 详解:当接收服务器返回的广告数据失败后调用该函数
+- (void)bannerViewFailToReceived:(NSError *)error
+{
+    NSLog(@"%s, Error:%@",__FUNCTION__,error);
+}
+
+// 应用进入后台时调用
+//
+// 详解:当点击下载或者地图类型广告时，会调用系统程序打开，
+// 应用将被自动切换到后台
+- (void)bannerViewWillLeaveApplication
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+// banner条曝光回调
+//
+// 详解:banner条曝光时回调该方法
+- (void)bannerViewWillExposure
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+// banner条点击回调
+//
+// 详解:banner条被点击时回调该方法
+- (void)bannerViewClicked
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+/**
+ *  banner条被用户关闭时调用
+ *  详解:当打开showCloseBtn开关时，用户有可能点击关闭按钮从而把广告条关闭
+ */
+- (void)bannerViewWillClose
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
 @end
