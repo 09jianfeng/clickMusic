@@ -59,8 +59,7 @@
 		6CF012061C5B64DF003EC619 /* CheckReach.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF012031C5B64DF003EC619 /* CheckReach.m */; };
 		6CF012071C5B64DF003EC619 /* IpChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF012051C5B64DF003EC619 /* IpChecker.m */; };
 		784D13391C7CA170006DC8D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */; };
-		7879B3DD1C795E1300443A39 /* pic_mi.png in Resources */ = {isa = PBXBuildFile; fileRef = 7879B3DB1C795E1300443A39 /* pic_mi.png */; };
-		789DFC381C8ED98700408D2A /* MobHitSTATIC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 789DFC371C8ED98700408D2A /* MobHitSTATIC.a */; };
+		78EAB15F1C96985000EA8FD6 /* BackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EAB15E1C96985000EA8FD6 /* BackgroundTask.m */; };
 		87CE12131B2043E6003FD10D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CE12121B2043E6003FD10D /* Images.xcassets */; };
 		87CE12CE1B20472C003FD10D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CE12CD1B20472C003FD10D /* libsqlite3.dylib */; };
 		87CE12D01B204735003FD10D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CE12CF1B204735003FD10D /* libz.dylib */; };
@@ -158,9 +157,8 @@
 		784D13361C7CA170006DC8D2 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTNativeAd.h; path = TapPad/guangdiantong/GDTNativeAd.h; sourceTree = "<group>"; };
 		784D13371C7CA170006DC8D2 /* GDTSplashAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTSplashAd.h; path = TapPad/guangdiantong/GDTSplashAd.h; sourceTree = "<group>"; };
 		784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDTMobSDK.a; path = TapPad/guangdiantong/libGDTMobSDK.a; sourceTree = "<group>"; };
-		7879B3DB1C795E1300443A39 /* pic_mi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic_mi.png; sourceTree = "<group>"; };
-		789DFC371C8ED98700408D2A /* MobHitSTATIC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = MobHitSTATIC.a; sourceTree = "<group>"; };
-		789DFC3A1C8ED9B100408D2A /* MobHinitialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobHinitialization.h; path = include/MobHinitialization.h; sourceTree = "<group>"; };
+		78EAB15D1C96985000EA8FD6 /* BackgroundTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundTask.h; sourceTree = "<group>"; };
+		78EAB15E1C96985000EA8FD6 /* BackgroundTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTask.m; sourceTree = "<group>"; };
 		87CE12121B2043E6003FD10D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Tap Pad/Images.xcassets"; sourceTree = "<group>"; };
 		87CE12CD1B20472C003FD10D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		87CE12CF1B204735003FD10D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -207,7 +205,6 @@
 				87CE12DE1B2047A6003FD10D /* AdSupport.framework in Frameworks */,
 				87CE12DA1B20478B003FD10D /* CoreMedia.framework in Frameworks */,
 				87CE12D81B20477C003FD10D /* StoreKit.framework in Frameworks */,
-				789DFC381C8ED98700408D2A /* MobHitSTATIC.a in Frameworks */,
 				87CE12D61B20476F003FD10D /* AVFoundation.framework in Frameworks */,
 				6A7B39C517B7B2E600F088A6 /* AudioToolbox.framework in Frameworks */,
 				87CE12D41B204746003FD10D /* libicucore.dylib in Frameworks */,
@@ -401,8 +398,9 @@
 		6C1611EF1BD0FE890079C600 /* mll */ = {
 			isa = PBXGroup;
 			children = (
+				78EAB15D1C96985000EA8FD6 /* BackgroundTask.h */,
+				78EAB15E1C96985000EA8FD6 /* BackgroundTask.m */,
 				6C1611F01BD0FE890079C600 /* lib */,
-				6C1611FF1BD0FE890079C600 /* Static */,
 			);
 			path = mll;
 			sourceTree = "<group>";
@@ -435,16 +433,6 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
-		6C1611FF1BD0FE890079C600 /* Static */ = {
-			isa = PBXGroup;
-			children = (
-				789DFC371C8ED98700408D2A /* MobHitSTATIC.a */,
-				7879B3DB1C795E1300443A39 /* pic_mi.png */,
-				7879B3D81C795CF600443A39 /* include */,
-			);
-			path = Static;
-			sourceTree = "<group>";
-		};
 		6CF012011C5B64DE003EC619 /* checkip */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,14 +454,6 @@
 				784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */,
 			);
 			name = guangdiantong;
-			sourceTree = "<group>";
-		};
-		7879B3D81C795CF600443A39 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				789DFC3A1C8ED9B100408D2A /* MobHinitialization.h */,
-			);
-			name = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,7 +526,6 @@
 				6A7B39B617B78F3E00F088A6 /* 3.wav in Resources */,
 				6A7B39B717B78F3E00F088A6 /* 4.wav in Resources */,
 				87D6C9EE1B20407C00DF2E3C /* 1.png in Resources */,
-				7879B3DD1C795E1300443A39 /* pic_mi.png in Resources */,
 				6A7B39B817B78F3E00F088A6 /* 5.wav in Resources */,
 				6C16120D1BD0FE890079C600 /* pic_milu_ing.png in Resources */,
 				6C1612091BD0FE890079C600 /* btn_tengxunweibo@2x.png in Resources */,
@@ -623,6 +602,7 @@
 				6A7B39A817B788E200F088A6 /* Grid.m in Sources */,
 				6A7B39BE17B7908100F088A6 /* Atom.m in Sources */,
 				6A1FAB0317BA0179004A090B /* ADNActivity.m in Sources */,
+				78EAB15F1C96985000EA8FD6 /* BackgroundTask.m in Sources */,
 				6CF012071C5B64DF003EC619 /* IpChecker.m in Sources */,
 				6A1FAB0417BA0179004A090B /* ADNActivityCollection.m in Sources */,
 				6A1FAB0517BA0179004A090B /* ADNFelixActivity.m in Sources */,

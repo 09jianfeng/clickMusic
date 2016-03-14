@@ -14,6 +14,6 @@
 
 -(void) pause;
 
--(void) play;
+-(void) playGame;
 
 @end
