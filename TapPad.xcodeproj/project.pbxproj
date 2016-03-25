@@ -58,6 +58,7 @@
 		6C16120F1BD0FE890079C600 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6C1611FE1BD0FE890079C600 /* sound.caf */; };
 		780FE1BF1CA53AC80025DCCD /* AppAssiSTATIC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 780FE1BB1CA53AC80025DCCD /* AppAssiSTATIC.a */; };
 		780FE1C01CA53AC80025DCCD /* btn_feedback.png in Resources */ = {isa = PBXBuildFile; fileRef = 780FE1BC1CA53AC80025DCCD /* btn_feedback.png */; };
+		780FE1C21CA541020025DCCD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 780FE1C11CA541020025DCCD /* Icon.png */; };
 		784D13391C7CA170006DC8D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */; };
 		87CE12131B2043E6003FD10D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CE12121B2043E6003FD10D /* Images.xcassets */; };
 		87CE12CE1B20472C003FD10D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CE12CD1B20472C003FD10D /* libsqlite3.dylib */; };
@@ -151,6 +152,7 @@
 		780FE1BC1CA53AC80025DCCD /* btn_feedback.png */ = {isa = PBXFileReference; explicitFileType = text; name = btn_feedback.png; path = Static/btn_feedback.png; sourceTree = "<group>"; };
 		780FE1BD1CA53AC80025DCCD /* PublicCallFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PublicCallFunction.h; path = Static/PublicCallFunction.h; sourceTree = "<group>"; };
 		780FE1BE1CA53AC80025DCCD /* publicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = publicHeader.h; path = Static/publicHeader.h; sourceTree = "<group>"; };
+		780FE1C11CA541020025DCCD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = SOURCE_ROOT; };
 		784D13341C7CA170006DC8D2 /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTMobBannerView.h; path = TapPad/guangdiantong/GDTMobBannerView.h; sourceTree = "<group>"; };
 		784D13351C7CA170006DC8D2 /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTMobInterstitial.h; path = TapPad/guangdiantong/GDTMobInterstitial.h; sourceTree = "<group>"; };
 		784D13361C7CA170006DC8D2 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTNativeAd.h; path = TapPad/guangdiantong/GDTNativeAd.h; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 		780FE1BA1CA53ABE0025DCCD /* xiaozhushou */ = {
 			isa = PBXGroup;
 			children = (
+				780FE1C11CA541020025DCCD /* Icon.png */,
 				780FE1BB1CA53AC80025DCCD /* AppAssiSTATIC.a */,
 				780FE1BC1CA53AC80025DCCD /* btn_feedback.png */,
 				780FE1BD1CA53AC80025DCCD /* PublicCallFunction.h */,
@@ -528,6 +531,7 @@
 				6C1612051BD0FE890079C600 /* bg_link.png in Resources */,
 				6C1612061BD0FE890079C600 /* btn_pyq@2x.png in Resources */,
 				6A7B39B917B78F3E00F088A6 /* 6.wav in Resources */,
+				780FE1C21CA541020025DCCD /* Icon.png in Resources */,
 				6A7B39BA17B78F3E00F088A6 /* 7.wav in Resources */,
 				F68D35B51B9FE38E005B5C80 /* musicBg.jpg in Resources */,
 				87CE12131B2043E6003FD10D /* Images.xcassets in Resources */,
