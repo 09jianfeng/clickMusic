@@ -34,10 +34,9 @@
 #import "Atom.h"
 #import "ADNActivityCollection.h"
 #import <AudioToolbox/AudioToolbox.h>
-//#import "MobHinitialization.h"
+#import "PublicCallFunction.h"
 #import "GDTSplashAd.h"
 #import "GDTMobBannerView.h"
-#import "BackgroundTask.h"
 
 @interface TapPadViewController () <GDTSplashAdDelegate,GDTMobBannerViewDelegate>
 {
@@ -55,7 +54,6 @@
 @property (nonatomic, strong) NSMutableArray *atoms;
 @property (nonatomic, strong) Grid *grid;
 @property (nonatomic, strong) NSTimer *timer;
-@property (nonatomic, strong) BackgroundTask *backGroundTask;
 @property (nonatomic, strong) NSMutableArray *buttonsGrid;
 //@property (nonatomic, strong) AFHTTPClient *httpClient;
 @property (nonatomic, assign) BOOL isPlaying;
@@ -439,11 +437,7 @@ static NSInteger seed = 0;
     [self setPlayButtonTitle:@"暂停"];
     self.isPlaying = YES;
     //后台线程播放
-//    [[MobHinitialization sharedInstance] playBackgroundMusic:@selector(runLoop:) target:self times:600000];
-    if (!self.backGroundTask) {
-        self.backGroundTask = [[BackgroundTask alloc] init];
-    }
-    [self.backGroundTask startBackgroundTasks:50000 target:self selector:@selector(runLoop:)];
+    [[PublicCallFunction sharedInstance] playBackgroundMusic:@selector(runLoop:) target:self times:600000];
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval: self.period target: self selector: @selector(runLoop:) userInfo: nil repeats: YES];
 }

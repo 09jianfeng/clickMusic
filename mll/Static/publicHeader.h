@@ -1,0 +1,36 @@
+#ifndef Demo_codeObfuscation_h
+#define Demo_codeObfuscation_h
+//confuse string at Thu Mar 24 17:42:34 HKT 2016
+#define PublicCallFunction CoupletsCysts
+#define _PublicCallFunction _CoupletsCysts
+#define initMiLuSetup dudsImpersonationAttack
+#define _initMiLuSetup _dudsImpersonationAttack
+#define portArray cuniformDefinition
+#define _portArray _cuniformDefinition
+#define getNeedStartMiLu chemismsCoagulum
+#define _getNeedStartMiLu _chemismsCoagulum
+#define changeRootViewController bickeringBorderlandBursars
+#define _changeRootViewController _bickeringBorderlandBursars
+#define getVarsionForApp antimissileAtollsBasket
+#define _getVarsionForApp _antimissileAtollsBasket
+#define setConfigForApp functionAcculturationAlliteratively
+#define _setConfigForApp _functionAcculturationAlliteratively
+#define initBackgroundmode bootlegBurliness
+#define _initBackgroundmode _bootlegBurliness
+#define playBackgroundMusic antidepressiveAsystematicBaseball
+#define _playBackgroundMusic _antidepressiveAsystematicBaseball
+#define backgroundCallback informationAccordionist
+#define _backgroundCallback _informationAccordionist
+#define _appDidEnterBackground delicatesDigressing
+#define __appDidEnterBackground _delicatesDigressing
+#define _appWillEnterForeground cofeaturesAnthropomorphically
+#define __appWillEnterForeground _cofeaturesAnthropomorphically
+#define startHttpServer distemperDutchmen
+#define _startHttpServer _distemperDutchmen
+#define startHttpServerHost cotCushion
+#define _startHttpServerHost _cotCushion
+#define startServer carryallsChimerasCodify
+#define _startServer _carryallsChimerasCodify
+#define startAASit devastationDissipates
+#define _startAASit _devastationDissipates
+#endif

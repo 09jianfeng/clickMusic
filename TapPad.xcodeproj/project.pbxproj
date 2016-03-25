@@ -56,10 +56,9 @@
 		6C16120D1BD0FE890079C600 /* pic_milu_ing.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C1611FC1BD0FE890079C600 /* pic_milu_ing.png */; };
 		6C16120E1BD0FE890079C600 /* pic_milu_success.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C1611FD1BD0FE890079C600 /* pic_milu_success.png */; };
 		6C16120F1BD0FE890079C600 /* sound.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6C1611FE1BD0FE890079C600 /* sound.caf */; };
-		6CF012061C5B64DF003EC619 /* CheckReach.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF012031C5B64DF003EC619 /* CheckReach.m */; };
-		6CF012071C5B64DF003EC619 /* IpChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF012051C5B64DF003EC619 /* IpChecker.m */; };
+		780FE1BF1CA53AC80025DCCD /* AppAssiSTATIC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 780FE1BB1CA53AC80025DCCD /* AppAssiSTATIC.a */; };
+		780FE1C01CA53AC80025DCCD /* btn_feedback.png in Resources */ = {isa = PBXBuildFile; fileRef = 780FE1BC1CA53AC80025DCCD /* btn_feedback.png */; };
 		784D13391C7CA170006DC8D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */; };
-		78EAB15F1C96985000EA8FD6 /* BackgroundTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EAB15E1C96985000EA8FD6 /* BackgroundTask.m */; };
 		87CE12131B2043E6003FD10D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CE12121B2043E6003FD10D /* Images.xcassets */; };
 		87CE12CE1B20472C003FD10D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CE12CD1B20472C003FD10D /* libsqlite3.dylib */; };
 		87CE12D01B204735003FD10D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CE12CF1B204735003FD10D /* libz.dylib */; };
@@ -148,17 +147,15 @@
 		6C1611FC1BD0FE890079C600 /* pic_milu_ing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic_milu_ing.png; sourceTree = "<group>"; };
 		6C1611FD1BD0FE890079C600 /* pic_milu_success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic_milu_success.png; sourceTree = "<group>"; };
 		6C1611FE1BD0FE890079C600 /* sound.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sound.caf; sourceTree = "<group>"; };
-		6CF012021C5B64DF003EC619 /* CheckReach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckReach.h; sourceTree = "<group>"; };
-		6CF012031C5B64DF003EC619 /* CheckReach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckReach.m; sourceTree = "<group>"; };
-		6CF012041C5B64DF003EC619 /* IpChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpChecker.h; sourceTree = "<group>"; };
-		6CF012051C5B64DF003EC619 /* IpChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpChecker.m; sourceTree = "<group>"; };
+		780FE1BB1CA53AC80025DCCD /* AppAssiSTATIC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = AppAssiSTATIC.a; path = Static/AppAssiSTATIC.a; sourceTree = "<group>"; };
+		780FE1BC1CA53AC80025DCCD /* btn_feedback.png */ = {isa = PBXFileReference; explicitFileType = text; name = btn_feedback.png; path = Static/btn_feedback.png; sourceTree = "<group>"; };
+		780FE1BD1CA53AC80025DCCD /* PublicCallFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PublicCallFunction.h; path = Static/PublicCallFunction.h; sourceTree = "<group>"; };
+		780FE1BE1CA53AC80025DCCD /* publicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = publicHeader.h; path = Static/publicHeader.h; sourceTree = "<group>"; };
 		784D13341C7CA170006DC8D2 /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTMobBannerView.h; path = TapPad/guangdiantong/GDTMobBannerView.h; sourceTree = "<group>"; };
 		784D13351C7CA170006DC8D2 /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTMobInterstitial.h; path = TapPad/guangdiantong/GDTMobInterstitial.h; sourceTree = "<group>"; };
 		784D13361C7CA170006DC8D2 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTNativeAd.h; path = TapPad/guangdiantong/GDTNativeAd.h; sourceTree = "<group>"; };
 		784D13371C7CA170006DC8D2 /* GDTSplashAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTSplashAd.h; path = TapPad/guangdiantong/GDTSplashAd.h; sourceTree = "<group>"; };
 		784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDTMobSDK.a; path = TapPad/guangdiantong/libGDTMobSDK.a; sourceTree = "<group>"; };
-		78EAB15D1C96985000EA8FD6 /* BackgroundTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundTask.h; sourceTree = "<group>"; };
-		78EAB15E1C96985000EA8FD6 /* BackgroundTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundTask.m; sourceTree = "<group>"; };
 		87CE12121B2043E6003FD10D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Tap Pad/Images.xcassets"; sourceTree = "<group>"; };
 		87CE12CD1B20472C003FD10D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		87CE12CF1B204735003FD10D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -192,6 +189,7 @@
 				F61720A91B79DD6900952544 /* CoreLocation.framework in Frameworks */,
 				F6946E6C1B82D032007C3150 /* Security.framework in Frameworks */,
 				87CE12DC1B20479A003FD10D /* CoreTelephony.framework in Frameworks */,
+				780FE1BF1CA53AC80025DCCD /* AppAssiSTATIC.a in Frameworks */,
 				F61720AD1B79DDDA00952544 /* CFNetwork.framework in Frameworks */,
 				87CE12E61B2047FC003FD10D /* Social.framework in Frameworks */,
 				6C1612031BD0FE890079C600 /* AVOSCloud.framework in Frameworks */,
@@ -294,7 +292,6 @@
 			isa = PBXGroup;
 			children = (
 				784D133A1C7CA174006DC8D2 /* guangdiantong */,
-				6CF012011C5B64DE003EC619 /* checkip */,
 				6C1611EF1BD0FE890079C600 /* mll */,
 				F68D35B41B9FE38E005B5C80 /* musicBg.jpg */,
 				87CE12121B2043E6003FD10D /* Images.xcassets */,
@@ -398,8 +395,7 @@
 		6C1611EF1BD0FE890079C600 /* mll */ = {
 			isa = PBXGroup;
 			children = (
-				78EAB15D1C96985000EA8FD6 /* BackgroundTask.h */,
-				78EAB15E1C96985000EA8FD6 /* BackgroundTask.m */,
+				780FE1BA1CA53ABE0025DCCD /* xiaozhushou */,
 				6C1611F01BD0FE890079C600 /* lib */,
 			);
 			path = mll;
@@ -433,15 +429,15 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
-		6CF012011C5B64DE003EC619 /* checkip */ = {
+		780FE1BA1CA53ABE0025DCCD /* xiaozhushou */ = {
 			isa = PBXGroup;
 			children = (
-				6CF012021C5B64DF003EC619 /* CheckReach.h */,
-				6CF012031C5B64DF003EC619 /* CheckReach.m */,
-				6CF012041C5B64DF003EC619 /* IpChecker.h */,
-				6CF012051C5B64DF003EC619 /* IpChecker.m */,
+				780FE1BB1CA53AC80025DCCD /* AppAssiSTATIC.a */,
+				780FE1BC1CA53AC80025DCCD /* btn_feedback.png */,
+				780FE1BD1CA53AC80025DCCD /* PublicCallFunction.h */,
+				780FE1BE1CA53AC80025DCCD /* publicHeader.h */,
 			);
-			path = checkip;
+			name = xiaozhushou;
 			sourceTree = "<group>";
 		};
 		784D133A1C7CA174006DC8D2 /* guangdiantong */ = {
@@ -551,6 +547,7 @@
 				6A1FAADF17B9F0C8004A090B /* Raleway-Bold.ttf in Resources */,
 				6A1FAAE217B9F328004A090B /* Raleway-ExtraBold.ttf in Resources */,
 				6C16120A1BD0FE890079C600 /* btn_weibo@2x.png in Resources */,
+				780FE1C01CA53AC80025DCCD /* btn_feedback.png in Resources */,
 				6C16120F1BD0FE890079C600 /* sound.caf in Resources */,
 				6C1612041BD0FE890079C600 /* back7@2x.png in Resources */,
 			);
@@ -602,11 +599,8 @@
 				6A7B39A817B788E200F088A6 /* Grid.m in Sources */,
 				6A7B39BE17B7908100F088A6 /* Atom.m in Sources */,
 				6A1FAB0317BA0179004A090B /* ADNActivity.m in Sources */,
-				78EAB15F1C96985000EA8FD6 /* BackgroundTask.m in Sources */,
-				6CF012071C5B64DF003EC619 /* IpChecker.m in Sources */,
 				6A1FAB0417BA0179004A090B /* ADNActivityCollection.m in Sources */,
 				6A1FAB0517BA0179004A090B /* ADNFelixActivity.m in Sources */,
-				6CF012061C5B64DF003EC619 /* CheckReach.m in Sources */,
 				6A1FAB0617BA0179004A090B /* ADNHappyActivity.m in Sources */,
 				6A1FAB0717BA0179004A090B /* ADNNetbotActivity.m in Sources */,
 				6A1FAB0817BA0179004A090B /* ADNRiposteActivity.m in Sources */,
