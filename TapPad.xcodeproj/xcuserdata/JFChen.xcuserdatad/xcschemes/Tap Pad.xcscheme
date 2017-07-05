@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6A7B397F17B7815600F088A6"
-               BuildableName = "TapPad.app"
+               BuildableName = "VPNSYULE.app"
                BlueprintName = "TapPad"
                ReferencedContainer = "container:TapPad.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A7B397F17B7815600F088A6"
-            BuildableName = "TapPad.app"
+            BuildableName = "VPNSYULE.app"
             BlueprintName = "TapPad"
             ReferencedContainer = "container:TapPad.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A7B397F17B7815600F088A6"
-            BuildableName = "TapPad.app"
+            BuildableName = "VPNSYULE.app"
             BlueprintName = "TapPad"
             ReferencedContainer = "container:TapPad.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A7B397F17B7815600F088A6"
-            BuildableName = "TapPad.app"
+            BuildableName = "VPNSYULE.app"
             BlueprintName = "TapPad"
             ReferencedContainer = "container:TapPad.xcodeproj">
          </BuildableReference>

@@ -8,18 +8,36 @@
 
 #import "AppDelegate.h"
 #import "TapPadViewController.h"
+#include <time.h>
+#include <sys/time.h>
+#import "DetailViewController.h"
 
 @interface AppDelegate()
 @end
 
 @implementation AppDelegate
 
+static uint32_t getTickCount() {
+    struct timeval now;
+    gettimeofday(&now, NULL);
+    return (uint32_t)now.tv_sec;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.viewController = [[TapPadViewController alloc]
+    
+    // 1490323106 3月24
+    uint32_t nowTime = getTickCount();
+    //50天后
+    if (nowTime > (1490323106 + 24*3600*110)) {
+        DetailViewController *detail = [DetailViewController new];
+        self.window.rootViewController = detail;
+    }else{
+        self.viewController = [[TapPadViewController alloc]
                                initWithNibName:@"TapPadViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+        self.window.rootViewController = self.viewController;
+    }
     [self.window makeKeyAndVisible];
     return YES;
 }
