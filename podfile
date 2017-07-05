@@ -1,2 +1,10 @@
-platform :ios, '6.0'
-pod 'AFNetworking', '~> 2.5.4'
+platform :ios, '7.0'
+inhibit_all_warnings!
+
+target:’Tap Pad’ do
+    pod 'MBProgressHUD', '~> 0.8'
+    pod 'GDataXML-HTML', '~> 1.3.0'
+    pod 'Masonry', '1.0.2'
+    pod 'AFNetworking', '3.1.0'
+    pod 'MJRefresh', '3.1.12'
+end

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		151C267717E165FA003CE479 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151C267617E165FA003CE479 /* SystemConfiguration.framework */; };
 		151C267917E16621003CE479 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151C267817E16621003CE479 /* MobileCoreServices.framework */; };
-		2B6D420C591561BC7E59B0D0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDB526C2541578F3578392B /* libPods.a */; };
 		6A03C20117B9B5FC004D2B36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A03C20017B9B5FC004D2B36 /* QuartzCore.framework */; };
 		6A0B1C2217B9784E00E6406E /* TapPadViewController~iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A0B1C2017B9784E00E6406E /* TapPadViewController~iPhone.xib */; };
 		6A0B1C2317B9784E00E6406E /* TapPadViewController~iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A0B1C2117B9784E00E6406E /* TapPadViewController~iPad.xib */; };
@@ -77,6 +76,7 @@
 		87CE12E81B20480C003FD10D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CE12E71B20480C003FD10D /* MessageUI.framework */; };
 		87D6C9EE1B20407C00DF2E3C /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 87D6C9EC1B20407C00DF2E3C /* 1.png */; };
 		87D6C9EF1B20407C00DF2E3C /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 87D6C9ED1B20407C00DF2E3C /* 2.png */; };
+		D4D0D2F5FD163E01CC13BA0C /* libPods-Tap Pad.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B07D37D234A8A1598535ED /* libPods-Tap Pad.a */; };
 		F61720A91B79DD6900952544 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61720A81B79DD6900952544 /* CoreLocation.framework */; };
 		F61720AD1B79DDDA00952544 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61720AC1B79DDDA00952544 /* CFNetwork.framework */; };
 		F68D35B51B9FE38E005B5C80 /* musicBg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F68D35B41B9FE38E005B5C80 /* musicBg.jpg */; };
@@ -86,8 +86,8 @@
 /* Begin PBXFileReference section */
 		151C267617E165FA003CE479 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		151C267817E16621003CE479 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		233934318D7506C3E23D9A60 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		4FE24AEDD041D24C9AC01810 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		34B07D37D234A8A1598535ED /* libPods-Tap Pad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tap Pad.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DB97B4986264999C87B1263 /* Pods-Tap Pad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Pad.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tap Pad/Pods-Tap Pad.release.xcconfig"; sourceTree = "<group>"; };
 		6A03C20017B9B5FC004D2B36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6A0B1C2017B9784E00E6406E /* TapPadViewController~iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "TapPadViewController~iPhone.xib"; path = "XIBs/TapPadViewController~iPhone.xib"; sourceTree = "<group>"; };
 		6A0B1C2117B9784E00E6406E /* TapPadViewController~iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "TapPadViewController~iPad.xib"; path = "XIBs/TapPadViewController~iPad.xib"; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		6A1FAB0017BA0179004A090B /* ADNNetbotActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADNNetbotActivity.m; path = Vendor/ADNActivities/ADNNetbotActivity.m; sourceTree = "<group>"; };
 		6A1FAB0117BA0179004A090B /* ADNRiposteActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNRiposteActivity.h; path = Vendor/ADNActivities/ADNRiposteActivity.h; sourceTree = "<group>"; };
 		6A1FAB0217BA0179004A090B /* ADNRiposteActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ADNRiposteActivity.m; path = Vendor/ADNActivities/ADNRiposteActivity.m; sourceTree = "<group>"; };
-		6A7B398017B7815600F088A6 /* Tap Pad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap Pad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7B398017B7815600F088A6 /* TapPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A7B398317B7815600F088A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6A7B398517B7815600F088A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A7B398717B7815600F088A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -175,7 +175,7 @@
 		87CE12E71B20480C003FD10D /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		87D6C9EC1B20407C00DF2E3C /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		87D6C9ED1B20407C00DF2E3C /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
-		9FDB526C2541578F3578392B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1720AC1BB643133AF70CA26 /* Pods-Tap Pad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Pad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tap Pad/Pods-Tap Pad.debug.xcconfig"; sourceTree = "<group>"; };
 		F61720A81B79DD6900952544 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F61720AA1B79DD8B00952544 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		F61720AC1B79DDDA00952544 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -215,18 +215,18 @@
 				6A7B398417B7815600F088A6 /* UIKit.framework in Frameworks */,
 				6A7B398617B7815600F088A6 /* Foundation.framework in Frameworks */,
 				6A7B398817B7815600F088A6 /* CoreGraphics.framework in Frameworks */,
-				2B6D420C591561BC7E59B0D0 /* libPods.a in Frameworks */,
+				D4D0D2F5FD163E01CC13BA0C /* libPods-Tap Pad.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26C4A8ADA194B8FFE7B1FBCE /* Pods */ = {
+		40B6D4DD7B8302A56D2D5ED6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				233934318D7506C3E23D9A60 /* Pods.debug.xcconfig */,
-				4FE24AEDD041D24C9AC01810 /* Pods.release.xcconfig */,
+				D1720AC1BB643133AF70CA26 /* Pods-Tap Pad.debug.xcconfig */,
+				4DB97B4986264999C87B1263 /* Pods-Tap Pad.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -302,14 +302,14 @@
 				6A7B398917B7815600F088A6 /* TapPad */,
 				6A7B398217B7815600F088A6 /* Frameworks */,
 				6A7B398117B7815600F088A6 /* Products */,
-				26C4A8ADA194B8FFE7B1FBCE /* Pods */,
+				40B6D4DD7B8302A56D2D5ED6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		6A7B398117B7815600F088A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A7B398017B7815600F088A6 /* Tap Pad.app */,
+				6A7B398017B7815600F088A6 /* TapPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -340,7 +340,7 @@
 				6A7B398317B7815600F088A6 /* UIKit.framework */,
 				6A7B398517B7815600F088A6 /* Foundation.framework */,
 				6A7B398717B7815600F088A6 /* CoreGraphics.framework */,
-				9FDB526C2541578F3578392B /* libPods.a */,
+				34B07D37D234A8A1598535ED /* libPods-Tap Pad.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -458,23 +458,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A7B397F17B7815600F088A6 /* Tap Pad */ = {
+		6A7B397F17B7815600F088A6 /* TapPad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A7B39A317B7815600F088A6 /* Build configuration list for PBXNativeTarget "Tap Pad" */;
+			buildConfigurationList = 6A7B39A317B7815600F088A6 /* Build configuration list for PBXNativeTarget "TapPad" */;
 			buildPhases = (
-				E28993B653533AE6AB5810D7 /* Check Pods Manifest.lock */,
+				2E4C5B4A125D067EB1CF34E5 /* [CP] Check Pods Manifest.lock */,
 				6A7B397C17B7815600F088A6 /* Sources */,
 				6A7B397D17B7815600F088A6 /* Frameworks */,
 				6A7B397E17B7815600F088A6 /* Resources */,
-				2AE57840BFE51CC1D78E5361 /* Copy Pods Resources */,
+				CDD5EB352A9CF602C076CD2E /* [CP] Embed Pods Frameworks */,
+				6E5C71D3003F4DF8782BA6BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Tap Pad";
+			name = TapPad;
 			productName = TapPad;
-			productReference = 6A7B398017B7815600F088A6 /* Tap Pad.app */;
+			productReference = 6A7B398017B7815600F088A6 /* TapPad.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -487,7 +488,7 @@
 				ORGANIZATIONNAME = "Dmitri Cherniak";
 				TargetAttributes = {
 					6A7B397F17B7815600F088A6 = {
-						DevelopmentTeam = RUDNP34A78;
+						DevelopmentTeam = 7H57TJHB75;
 					};
 				};
 			};
@@ -509,7 +510,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A7B397F17B7815600F088A6 /* Tap Pad */,
+				6A7B397F17B7815600F088A6 /* TapPad */,
 			);
 		};
 /* End PBXProject section */
@@ -560,34 +561,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2AE57840BFE51CC1D78E5361 /* Copy Pods Resources */ = {
+		2E4C5B4A125D067EB1CF34E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E28993B653533AE6AB5810D7 /* Check Pods Manifest.lock */ = {
+		6E5C71D3003F4DF8782BA6BC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tap Pad/Pods-Tap Pad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDD5EB352A9CF602C076CD2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tap Pad/Pods-Tap Pad-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -691,14 +707,14 @@
 		};
 		6A7B39A417B7815600F088A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 233934318D7506C3E23D9A60 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D1720AC1BB643133AF70CA26 /* Pods-Tap Pad.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = RUDNP34A78;
+				DEVELOPMENT_TEAM = 7H57TJHB75;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -707,7 +723,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TapPad/TapPad-Prefix.pch";
 				INFOPLIST_FILE = "TapPad/TapPad-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/mll/lib/jpushlib",
@@ -720,7 +736,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.music.clickmusic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinyutan.clickmusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -732,14 +748,14 @@
 		};
 		6A7B39A517B7815600F088A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FE24AEDD041D24C9AC01810 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 4DB97B4986264999C87B1263 /* Pods-Tap Pad.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = RUDNP34A78;
+				DEVELOPMENT_TEAM = 7H57TJHB75;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -748,7 +764,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TapPad/TapPad-Prefix.pch";
 				INFOPLIST_FILE = "TapPad/TapPad-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/mll/lib/jpushlib",
@@ -762,7 +778,7 @@
 					"-all_load",
 					"-lstdc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.music.clickmusic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinyutan.clickmusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -784,7 +800,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A7B39A317B7815600F088A6 /* Build configuration list for PBXNativeTarget "Tap Pad" */ = {
+		6A7B39A317B7815600F088A6 /* Build configuration list for PBXNativeTarget "TapPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A7B39A417B7815600F088A6 /* Debug */,
