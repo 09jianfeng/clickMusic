@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "TapPadViewController.h"
-#import "PublicCallFunction.h"
 
 @interface AppDelegate()
 @end
@@ -18,13 +17,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    if (getNeedStartMiLu()) {
-        [PublicCallFunction sharedInstance];
-    }else{
-        self.viewController = [[TapPadViewController alloc]
+    self.viewController = [[TapPadViewController alloc]
                                initWithNibName:@"TapPadViewController" bundle:nil];
-        self.window.rootViewController = self.viewController;
-    }
+    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -34,11 +29,4 @@
     //    [self.viewController pause];
 }
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-    return [[PublicCallFunction sharedInstance] application:application sourceApplication:sourceApplication openURL:url];
-}
-- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
-{
-    return [[PublicCallFunction sharedInstance] application:application handleOpenURL:url];
-}
 @end

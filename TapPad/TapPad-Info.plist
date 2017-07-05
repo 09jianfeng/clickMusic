@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>击打音乐</string>
+	<string>VNS娱乐</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIcons</key>
@@ -54,11 +54,6 @@
 	<array>
 		<string>Raleway-ExtraBold.ttf</string>
 		<string>Raleway-Bold.ttf</string>
-	</array>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>remote-notification</string>
-		<string>audio</string>
 	</array>
 	<key>UIPrerenderedIcon</key>
 	<true/>
