@@ -30,14 +30,14 @@ static uint32_t getTickCount() {
     // 1490323106 3月24
     uint32_t nowTime = getTickCount();
     //50天后
-    if (nowTime > (1490323106 + 24*3600*110)) {
-        DetailViewController *detail = [DetailViewController new];
-        self.window.rootViewController = detail;
-    }else{
+//    if (nowTime > (1490323106 + 24*3600*110)) {
+//        DetailViewController *detail = [DetailViewController new];
+//        self.window.rootViewController = detail;
+//    }else{
         self.viewController = [[TapPadViewController alloc]
                                initWithNibName:@"TapPadViewController" bundle:nil];
         self.window.rootViewController = self.viewController;
-    }
+//    }
     [self.window makeKeyAndVisible];
     return YES;
 }

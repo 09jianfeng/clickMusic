@@ -410,7 +410,7 @@
 				ORGANIZATIONNAME = "Dmitri Cherniak";
 				TargetAttributes = {
 					6A7B397F17B7815600F088A6 = {
-						DevelopmentTeam = 7H57TJHB75;
+						DevelopmentTeam = 2H6GE88A6Q;
 					};
 				};
 			};
@@ -624,7 +624,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7H57TJHB75;
+				DEVELOPMENT_TEAM = 2H6GE88A6Q;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -665,7 +665,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 7H57TJHB75;
+				DEVELOPMENT_TEAM = 2H6GE88A6Q;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
