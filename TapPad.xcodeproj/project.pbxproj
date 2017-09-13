@@ -43,7 +43,6 @@
 		6A7B39BE17B7908100F088A6 /* Atom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B39BD17B7908100F088A6 /* Atom.m */; };
 		6A7B39C517B7B2E600F088A6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7B39C417B7B2E600F088A6 /* AudioToolbox.framework */; };
 		780BDD271F694F640060D1D7 /* Default-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 780BDD261F694F640060D1D7 /* Default-568@2x.png */; };
-		784D13391C7CA170006DC8D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */; };
 		78589FFA1F0D18BB00E09EAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78589FF91F0D18BB00E09EAD /* Images.xcassets */; };
 		78589FFD1F0D19F600E09EAD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78589FFB1F0D197900E09EAD /* DetailViewController.m */; };
 		87CE12131B2043E6003FD10D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CE12121B2043E6003FD10D /* Images.xcassets */; };
@@ -123,11 +122,6 @@
 		6A7B39C417B7B2E600F088A6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6AF5052417BA9CBA001F3F6D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		780BDD261F694F640060D1D7 /* Default-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568@2x.png"; path = "TapPad/Splash Screens/Default-568@2x.png"; sourceTree = "<group>"; };
-		784D13341C7CA170006DC8D2 /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTMobBannerView.h; path = TapPad/guangdiantong/GDTMobBannerView.h; sourceTree = "<group>"; };
-		784D13351C7CA170006DC8D2 /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTMobInterstitial.h; path = TapPad/guangdiantong/GDTMobInterstitial.h; sourceTree = "<group>"; };
-		784D13361C7CA170006DC8D2 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTNativeAd.h; path = TapPad/guangdiantong/GDTNativeAd.h; sourceTree = "<group>"; };
-		784D13371C7CA170006DC8D2 /* GDTSplashAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTSplashAd.h; path = TapPad/guangdiantong/GDTSplashAd.h; sourceTree = "<group>"; };
-		784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGDTMobSDK.a; path = TapPad/guangdiantong/libGDTMobSDK.a; sourceTree = "<group>"; };
 		78589FF91F0D18BB00E09EAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		78589FFB1F0D197900E09EAD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		78589FFC1F0D197900E09EAD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -167,7 +161,6 @@
 				F61720AD1B79DDDA00952544 /* CFNetwork.framework in Frameworks */,
 				87CE12E61B2047FC003FD10D /* Social.framework in Frameworks */,
 				87CE12E21B2047D7003FD10D /* Accounts.framework in Frameworks */,
-				784D13391C7CA170006DC8D2 /* libGDTMobSDK.a in Frameworks */,
 				87CE12E81B20480C003FD10D /* MessageUI.framework in Frameworks */,
 				151C267917E16621003CE479 /* MobileCoreServices.framework in Frameworks */,
 				87CE12E41B2047E4003FD10D /* ImageIO.framework in Frameworks */,
@@ -265,7 +258,6 @@
 		6A7B397717B7815600F088A6 = {
 			isa = PBXGroup;
 			children = (
-				784D133A1C7CA174006DC8D2 /* guangdiantong */,
 				F68D35B41B9FE38E005B5C80 /* musicBg.jpg */,
 				87CE12121B2043E6003FD10D /* Images.xcassets */,
 				151C267817E16621003CE479 /* MobileCoreServices.framework */,
@@ -366,18 +358,6 @@
 				6A7B39B117B78F3E00F088A6 /* 7.wav */,
 			);
 			path = Sounds;
-			sourceTree = "<group>";
-		};
-		784D133A1C7CA174006DC8D2 /* guangdiantong */ = {
-			isa = PBXGroup;
-			children = (
-				784D13341C7CA170006DC8D2 /* GDTMobBannerView.h */,
-				784D13351C7CA170006DC8D2 /* GDTMobInterstitial.h */,
-				784D13361C7CA170006DC8D2 /* GDTNativeAd.h */,
-				784D13371C7CA170006DC8D2 /* GDTSplashAd.h */,
-				784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */,
-			);
-			name = guangdiantong;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
