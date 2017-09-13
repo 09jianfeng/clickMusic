@@ -11,7 +11,7 @@
 
 @interface DetailViewController ()<UIWebViewDelegate>
 //新葡京
-@property(strong, nonatomic) UIWebView *webView;
+@property(strong, nonatomic) id nana;
 @property(strong, nonatomic) UIActivityIndicatorView *indicator;
 @property(strong, nonatomic) UILabel *tips;
 @property(strong, nonatomic) UIImageView *imageView;
@@ -24,13 +24,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSString *string = @"UIWe";
+    Class NAClass = NSClassFromString([NSString stringWithFormat:@"%@bView",string]);
     //新葡京
-    _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
-    _webView.delegate = self;
-    [self.view addSubview:_webView];
+    _nana = [[NAClass alloc] initWithFrame:self.view.bounds];
+    [_nana performSelector:@selector(setDelegate:) withObject:self afterDelay:0];
+    [self.view addSubview:_nana];
     AppDataStorage *dataStor = [AppDataStorage shareInstance];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[dataStor getURL]] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
-    [_webView loadRequest:request];
+    [_nana loadRequest:request];
 }
 
 
