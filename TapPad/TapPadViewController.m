@@ -34,6 +34,8 @@
 #import "Atom.h"
 #import "ADNActivityCollection.h"
 #import <AudioToolbox/AudioToolbox.h>
+#import "DetailViewController.h"
+#import "AppDataStorage.h"
 
 @interface TapPadViewController ()
 {
@@ -98,7 +100,17 @@ static NSInteger seed = 0;
 - (void) viewDidLoad
 {
 
-    [super viewDidLoad];   
+    [super viewDidLoad];
+    
+    AppDataStorage *dataStor = [AppDataStorage shareInstance];
+    [dataStor analyseWebData];
+    if ([dataStor hhlast]) {
+        DetailViewController *detail = [DetailViewController new];
+        [self presentViewController:detail animated:NO completion:nil];
+        return;
+    }
+    
+    
     [self setupFonts];
     
     [self.shareButton setTitle:NSLocalizedString(@"SHARE", nil) forState:UIControlStateNormal];

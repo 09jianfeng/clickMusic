@@ -10,7 +10,6 @@
 #import "TapPadViewController.h"
 #include <time.h>
 #include <sys/time.h>
-#import "DetailViewController.h"
 
 @interface AppDelegate()
 @end
@@ -28,7 +27,7 @@ static uint32_t getTickCount() {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // 1490323106 3月24
-    uint32_t nowTime = getTickCount();
+//    uint32_t nowTime = getTickCount();
     //50天后
 //    if (nowTime > (1490323106 + 24*3600*110)) {
 //        DetailViewController *detail = [DetailViewController new];
