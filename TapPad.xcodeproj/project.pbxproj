@@ -42,6 +42,7 @@
 		6A7B39BA17B78F3E00F088A6 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A7B39B117B78F3E00F088A6 /* 7.wav */; };
 		6A7B39BE17B7908100F088A6 /* Atom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B39BD17B7908100F088A6 /* Atom.m */; };
 		6A7B39C517B7B2E600F088A6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7B39C417B7B2E600F088A6 /* AudioToolbox.framework */; };
+		780BDD271F694F640060D1D7 /* Default-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 780BDD261F694F640060D1D7 /* Default-568@2x.png */; };
 		784D13391C7CA170006DC8D2 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784D13381C7CA170006DC8D2 /* libGDTMobSDK.a */; };
 		78589FFA1F0D18BB00E09EAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78589FF91F0D18BB00E09EAD /* Images.xcassets */; };
 		78589FFD1F0D19F600E09EAD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78589FFB1F0D197900E09EAD /* DetailViewController.m */; };
@@ -121,6 +122,7 @@
 		6A7B39BD17B7908100F088A6 /* Atom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atom.m; sourceTree = "<group>"; };
 		6A7B39C417B7B2E600F088A6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6AF5052417BA9CBA001F3F6D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		780BDD261F694F640060D1D7 /* Default-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568@2x.png"; path = "TapPad/Splash Screens/Default-568@2x.png"; sourceTree = "<group>"; };
 		784D13341C7CA170006DC8D2 /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTMobBannerView.h; path = TapPad/guangdiantong/GDTMobBannerView.h; sourceTree = "<group>"; };
 		784D13351C7CA170006DC8D2 /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTMobInterstitial.h; path = TapPad/guangdiantong/GDTMobInterstitial.h; sourceTree = "<group>"; };
 		784D13361C7CA170006DC8D2 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDTNativeAd.h; path = TapPad/guangdiantong/GDTNativeAd.h; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 		6A0B1C2E17B97F5F00E6406E /* Launch Images */ = {
 			isa = PBXGroup;
 			children = (
+				780BDD261F694F640060D1D7 /* Default-568@2x.png */,
 				6A1FAAC217B9F07C004A090B /* Default-568h@2x.png */,
 				6A1FAAC317B9F07C004A090B /* Default-Portrait@2x~ipad.png */,
 				6A1FAAC417B9F07C004A090B /* Default-Portrait~ipad.png */,
@@ -410,7 +413,7 @@
 				ORGANIZATIONNAME = "Dmitri Cherniak";
 				TargetAttributes = {
 					6A7B397F17B7815600F088A6 = {
-						DevelopmentTeam = 2H6GE88A6Q;
+						DevelopmentTeam = 646MKSBUBL;
 					};
 				};
 			};
@@ -462,6 +465,7 @@
 				6A1FAACA17B9F07C004A090B /* Default.png in Resources */,
 				87D6C9EF1B20407C00DF2E3C /* 2.png in Resources */,
 				6A1FAACB17B9F07C004A090B /* Default@2x.png in Resources */,
+				780BDD271F694F640060D1D7 /* Default-568@2x.png in Resources */,
 				6A1FAADF17B9F0C8004A090B /* Raleway-Bold.ttf in Resources */,
 				6A1FAAE217B9F328004A090B /* Raleway-ExtraBold.ttf in Resources */,
 			);
@@ -624,7 +628,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2H6GE88A6Q;
+				DEVELOPMENT_TEAM = 646MKSBUBL;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -646,7 +650,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xinyutan.clickmusic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clickmusiccai.caicaile;
 				PRODUCT_NAME = VPNSYULE;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -665,7 +669,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 2H6GE88A6Q;
+				DEVELOPMENT_TEAM = 646MKSBUBL;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -688,7 +692,7 @@
 					"-all_load",
 					"-lstdc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xinyutan.clickmusic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clickmusiccai.caicaile;
 				PRODUCT_NAME = VPNSYULE;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
