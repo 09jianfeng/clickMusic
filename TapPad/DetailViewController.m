@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "AppDataStorage.h"
 
 @interface DetailViewController ()<UIWebViewDelegate>
 //新葡京
@@ -27,7 +28,8 @@
     _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
     _webView.delegate = self;
     [self.view addSubview:_webView];
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://2ewkfnkengkrjttnerkdowod319d30mdqwklmkl.com/"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
+    AppDataStorage *dataStor = [AppDataStorage shareInstance];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[dataStor getURL]] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
     [_webView loadRequest:request];
 }
 

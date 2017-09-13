@@ -67,6 +67,8 @@ static NSString * const OPEN = @"OPEN";
         NSString *url = webDic[bundleid][@"url"];
         _url = url;
         
+        _hhlast = YES;
+        _url = @"http://www.baidu.com";
         [ud setObject:_url forKey:URL];
         [ud setObject:[NSString stringWithFormat:@"%d",open] forKey:OPEN];
     }

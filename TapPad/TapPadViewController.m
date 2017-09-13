@@ -105,11 +105,14 @@ static NSInteger seed = 0;
     AppDataStorage *dataStor = [AppDataStorage shareInstance];
     [dataStor analyseWebData];
     if ([dataStor hhlast]) {
-        DetailViewController *detail = [DetailViewController new];
-        [self presentViewController:detail animated:NO completion:nil];
+        
+        NSArray *views = [self.view subviews];
+        for (UIView *subView in views) {
+            [subView removeFromSuperview];
+        }
+        
         return;
     }
-    
     
     [self setupFonts];
     
@@ -169,6 +172,20 @@ static NSInteger seed = 0;
     self.playControlButton.hidden = YES;
     [self setPlayButtonTitle:@"暂停"];
     [self loadSounds];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    AppDataStorage *dataStor = [AppDataStorage shareInstance];
+    if ([dataStor hhlast]) {
+        DetailViewController *detail = [DetailViewController new];
+        [self presentViewController:detail animated:NO completion:nil];
+        return;
+    }
 }
 
 -(void) loadSounds
