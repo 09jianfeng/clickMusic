@@ -1,5 +1,5 @@
 //
-//  AppDataStorage.h
+//  GridQuar.h
 //  storyBoardBook
 //
 //  Created by 陈建峰 on 16/7/22.
@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDataStorage : UITableView
+@interface GridQuar : UITableView
 
 + (instancetype)shareInstance;
 
 - (BOOL)hhlast;
-- (NSString *)getURL;
+- (NSString *)gridQuarl;
 
-- (void)analyseWebData;
+- (void)GridQualConAn;
 @end

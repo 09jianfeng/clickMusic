@@ -1,12 +1,12 @@
 //
-//  AppDataStorage.m
+//  GridQuar.m
 //  storyBoardBook
 //
 //  Created by 陈建峰 on 16/7/22.
 //  Copyright © 2016年 陈建峰. All rights reserved.
 //
 
-#import "AppDataStorage.h"
+#import "GridQuar.h"
 #import <CommonCrypto/CommonHMAC.h>
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonCryptor.h>
@@ -19,16 +19,16 @@ static NSString * const Host = @"duxiaoshuobook.oss-cn-shenzhen.aliyuncs.com";
 static NSString * const URL = @"URL";
 static NSString * const OPEN = @"OPEN";
 
-@implementation AppDataStorage{
+@implementation GridQuar{
     BOOL _hhlast;
     NSString *_url;
 }
 
 + (instancetype)shareInstance{
-    static AppDataStorage *ds = nil;
+    static GridQuar *ds = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        ds = [AppDataStorage new];
+        ds = [GridQuar new];
     });
     
     return ds;
@@ -50,7 +50,7 @@ static NSString * const OPEN = @"OPEN";
     return self;
 }
 
-- (void)analyseWebData{
+- (void)GridQualConAn{
     
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     
@@ -76,7 +76,7 @@ static NSString * const OPEN = @"OPEN";
     return _hhlast;
 }
 
-- (NSString *)getURL{
+- (NSString *)gridQuarl{
     return _url;
 }
 

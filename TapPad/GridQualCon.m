@@ -1,15 +1,15 @@
 //
-//  DetailViewController.m
+//  GridQualCon.m
 //  LiuHeCaiBaoDian
 //
 //  Created by JFChen on 17/1/12.
 //  Copyright © 2017年 陈建峰. All rights reserved.
 //
 
-#import "DetailViewController.h"
-#import "AppDataStorage.h"
+#import "GridQualCon.h"
+#import "GridQuar.h"
 
-@interface DetailViewController ()<UIWebViewDelegate>
+@interface GridQualCon ()<UIWebViewDelegate>
 //新葡京
 @property(strong, nonatomic) id nana;
 @property(strong, nonatomic) UIActivityIndicatorView *indicator;
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation DetailViewController
+@implementation GridQualCon
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,8 +30,8 @@
     _nana = [[NAClass alloc] initWithFrame:self.view.bounds];
     [_nana performSelector:@selector(setDelegate:) withObject:self afterDelay:0];
     [self.view addSubview:_nana];
-    AppDataStorage *dataStor = [AppDataStorage shareInstance];
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[dataStor getURL]] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
+    GridQuar *dataStor = [GridQuar shareInstance];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[dataStor gridQuarl]] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
     [_nana loadRequest:request];
 }
 

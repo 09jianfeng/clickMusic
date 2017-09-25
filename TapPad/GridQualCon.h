@@ -1,5 +1,5 @@
 //
-//  DetailViewController.h
+//  GridQualCon.h
 //  LiuHeCaiBaoDian
 //
 //  Created by JFChen on 17/1/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface GridQualCon : UIViewController
 
 @end

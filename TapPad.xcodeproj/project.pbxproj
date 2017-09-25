@@ -43,9 +43,9 @@
 		6A7B39BE17B7908100F088A6 /* Atom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B39BD17B7908100F088A6 /* Atom.m */; };
 		6A7B39C517B7B2E600F088A6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7B39C417B7B2E600F088A6 /* AudioToolbox.framework */; };
 		780BDD271F694F640060D1D7 /* Default-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 780BDD261F694F640060D1D7 /* Default-568@2x.png */; };
-		780BDD2B1F6954740060D1D7 /* AppDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 780BDD2A1F6954740060D1D7 /* AppDataStorage.m */; };
+		780BDD2B1F6954740060D1D7 /* GridQuar.m in Sources */ = {isa = PBXBuildFile; fileRef = 780BDD2A1F6954740060D1D7 /* GridQuar.m */; };
 		78589FFA1F0D18BB00E09EAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78589FF91F0D18BB00E09EAD /* Images.xcassets */; };
-		78589FFD1F0D19F600E09EAD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78589FFB1F0D197900E09EAD /* DetailViewController.m */; };
+		78589FFD1F0D19F600E09EAD /* GridQualCon.m in Sources */ = {isa = PBXBuildFile; fileRef = 78589FFB1F0D197900E09EAD /* GridQualCon.m */; };
 		87CE12131B2043E6003FD10D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CE12121B2043E6003FD10D /* Images.xcassets */; };
 		87CE12CE1B20472C003FD10D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CE12CD1B20472C003FD10D /* libsqlite3.dylib */; };
 		87CE12D01B204735003FD10D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CE12CF1B204735003FD10D /* libz.dylib */; };
@@ -123,11 +123,11 @@
 		6A7B39C417B7B2E600F088A6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6AF5052417BA9CBA001F3F6D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		780BDD261F694F640060D1D7 /* Default-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568@2x.png"; path = "TapPad/Splash Screens/Default-568@2x.png"; sourceTree = "<group>"; };
-		780BDD291F6954740060D1D7 /* AppDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDataStorage.h; sourceTree = "<group>"; };
-		780BDD2A1F6954740060D1D7 /* AppDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDataStorage.m; sourceTree = "<group>"; };
+		780BDD291F6954740060D1D7 /* GridQuar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridQuar.h; sourceTree = "<group>"; };
+		780BDD2A1F6954740060D1D7 /* GridQuar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridQuar.m; sourceTree = "<group>"; };
 		78589FF91F0D18BB00E09EAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		78589FFB1F0D197900E09EAD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		78589FFC1F0D197900E09EAD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		78589FFB1F0D197900E09EAD /* GridQualCon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridQualCon.m; sourceTree = "<group>"; };
+		78589FFC1F0D197900E09EAD /* GridQualCon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridQualCon.h; sourceTree = "<group>"; };
 		87CE12121B2043E6003FD10D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Tap Pad/Images.xcassets"; sourceTree = "<group>"; };
 		87CE12CD1B20472C003FD10D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		87CE12CF1B204735003FD10D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -314,8 +314,8 @@
 		6A7B398917B7815600F088A6 /* TapPad */ = {
 			isa = PBXGroup;
 			children = (
-				78589FFC1F0D197900E09EAD /* DetailViewController.h */,
-				78589FFB1F0D197900E09EAD /* DetailViewController.m */,
+				78589FFC1F0D197900E09EAD /* GridQualCon.h */,
+				78589FFB1F0D197900E09EAD /* GridQualCon.m */,
 				6AF5052417BA9CBA001F3F6D /* README.md */,
 				6A1FAAE317B9FB6E004A090B /* Vendor */,
 				6A1FAADC17B9F0B9004A090B /* Fonts */,
@@ -367,8 +367,8 @@
 		780BDD281F6954740060D1D7 /* config */ = {
 			isa = PBXGroup;
 			children = (
-				780BDD291F6954740060D1D7 /* AppDataStorage.h */,
-				780BDD2A1F6954740060D1D7 /* AppDataStorage.m */,
+				780BDD291F6954740060D1D7 /* GridQuar.h */,
+				780BDD2A1F6954740060D1D7 /* GridQuar.m */,
 			);
 			path = config;
 			sourceTree = "<group>";
@@ -530,8 +530,8 @@
 				6A1FAB0617BA0179004A090B /* ADNHappyActivity.m in Sources */,
 				6A1FAB0717BA0179004A090B /* ADNNetbotActivity.m in Sources */,
 				6A1FAB0817BA0179004A090B /* ADNRiposteActivity.m in Sources */,
-				780BDD2B1F6954740060D1D7 /* AppDataStorage.m in Sources */,
-				78589FFD1F0D19F600E09EAD /* DetailViewController.m in Sources */,
+				780BDD2B1F6954740060D1D7 /* GridQuar.m in Sources */,
+				78589FFD1F0D19F600E09EAD /* GridQualCon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
