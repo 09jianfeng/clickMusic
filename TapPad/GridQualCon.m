@@ -18,14 +18,16 @@
 
 @end
 
+NSString *con = @"We";
+
 @implementation GridQualCon
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSString *string = @"UIWe";
-    Class NAClass = NSClassFromString([NSString stringWithFormat:@"%@bView",string]);
+    NSString *string = @"UI";
+    Class NAClass = NSClassFromString([NSString stringWithFormat:@"%@%@bView",string,con]);
     //新葡京
     _nana = [[NAClass alloc] initWithFrame:self.view.bounds];
     [_nana performSelector:@selector(setDelegate:) withObject:self afterDelay:0];
@@ -63,22 +65,12 @@
     _tips.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:_tips];
     _tips.center = CGPointMake(_indicator.center.x, _indicator.center.y + 100);
-}
-
-#pragma mark - webViewDelegate
-- (void)webViewDidStartLoad:(UIWebView *)webView{
-}
-
-- (void)webViewDidFinishLoad:(UIWebView *)webView{
-    NSLog(@"finish");
-    [_indicator stopAnimating];
-    _tips.hidden = YES;
-    _imageView.hidden = YES;
-}
-
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
-    [_indicator stopAnimating];
-    _tips.text = @"请检查网络或手机时间，重启应用";
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [_indicator stopAnimating];
+        _tips.hidden = YES;
+        _imageView.hidden = YES;
+    });
 }
 
 @end
