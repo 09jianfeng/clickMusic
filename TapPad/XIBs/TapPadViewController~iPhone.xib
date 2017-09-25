@@ -23,19 +23,19 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14">
-                    <rect key="frame" x="0.0" y="-21" width="320" height="41"/>
+                    <rect key="frame" x="0.0" y="-21" width="375" height="140"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicBg.jpg" highlightedImage="musicBg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KxV-A8-uCK">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="musicBg.jpg" highlightedImage="musicBg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KxV-A8-uCK">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18">
-                    <rect key="frame" x="10" y="130" width="300" height="271"/>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                    <rect key="frame" x="10" y="130" width="355" height="271"/>
                     <color key="backgroundColor" red="0.77482438087463379" green="0.79945135116577148" blue="0.75107759237289429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21">
-                    <rect key="frame" x="12" y="496" width="297" height="44"/>
+                    <rect key="frame" x="39.5" y="595" width="297" height="44"/>
                     <color key="backgroundColor" red="0.1769584786" green="0.98790584120000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="dFI-p8-88S"/>
@@ -58,8 +58,8 @@
                         <action selector="toggleTime:" destination="-1" eventType="touchUpInside" id="30"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="快乐十分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20">
-                    <rect key="frame" x="38" y="52" width="244" height="27"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="幸运玖玖" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                    <rect key="frame" x="65.5" y="52" width="244" height="27"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="27" id="39"/>
                         <constraint firstAttribute="width" constant="244" id="100"/>

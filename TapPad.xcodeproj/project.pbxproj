@@ -406,7 +406,7 @@
 				ORGANIZATIONNAME = "Dmitri Cherniak";
 				TargetAttributes = {
 					6A7B397F17B7815600F088A6 = {
-						DevelopmentTeam = 646MKSBUBL;
+						DevelopmentTeam = MS2A9P4KDW;
 					};
 				};
 			};
@@ -622,7 +622,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 646MKSBUBL;
+				DEVELOPMENT_TEAM = MS2A9P4KDW;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -644,7 +644,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.clickmusiccai.caicaile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinyun.jiujiu;
 				PRODUCT_NAME = VPNSYULE;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -663,7 +663,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 646MKSBUBL;
+				DEVELOPMENT_TEAM = MS2A9P4KDW;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -686,7 +686,7 @@
 					"-all_load",
 					"-lstdc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.clickmusiccai.caicaile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinyun.jiujiu;
 				PRODUCT_NAME = VPNSYULE;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
