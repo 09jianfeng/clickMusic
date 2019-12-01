@@ -7,16 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		151C267717E165FA003CE479 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151C267617E165FA003CE479 /* SystemConfiguration.framework */; };
-		151C267917E16621003CE479 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 151C267817E16621003CE479 /* MobileCoreServices.framework */; };
 		6A03C20117B9B5FC004D2B36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A03C20017B9B5FC004D2B36 /* QuartzCore.framework */; };
 		6A0B1C2217B9784E00E6406E /* TapPadViewController~iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A0B1C2017B9784E00E6406E /* TapPadViewController~iPhone.xib */; };
 		6A0B1C2317B9784E00E6406E /* TapPadViewController~iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A0B1C2117B9784E00E6406E /* TapPadViewController~iPad.xib */; };
-		6A1FAAC717B9F07C004A090B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A1FAAC217B9F07C004A090B /* Default-568h@2x.png */; };
-		6A1FAAC817B9F07C004A090B /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A1FAAC317B9F07C004A090B /* Default-Portrait@2x~ipad.png */; };
-		6A1FAAC917B9F07C004A090B /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A1FAAC417B9F07C004A090B /* Default-Portrait~ipad.png */; };
-		6A1FAACA17B9F07C004A090B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A1FAAC517B9F07C004A090B /* Default.png */; };
-		6A1FAACB17B9F07C004A090B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A1FAAC617B9F07C004A090B /* Default@2x.png */; };
 		6A1FAADF17B9F0C8004A090B /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A1FAADD17B9F0C8004A090B /* Raleway-Bold.ttf */; };
 		6A1FAAE217B9F328004A090B /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A1FAAE117B9F328004A090B /* Raleway-ExtraBold.ttf */; };
 		6A1FAB0317BA0179004A090B /* ADNActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A1FAAF817BA0179004A090B /* ADNActivity.m */; };
@@ -42,6 +35,8 @@
 		6A7B39BA17B78F3E00F088A6 /* 7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A7B39B117B78F3E00F088A6 /* 7.wav */; };
 		6A7B39BE17B7908100F088A6 /* Atom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B39BD17B7908100F088A6 /* Atom.m */; };
 		6A7B39C517B7B2E600F088A6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7B39C417B7B2E600F088A6 /* AudioToolbox.framework */; };
+		782FC52C2393C00000344654 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782FC52B2393C00000344654 /* Launch Screen.storyboard */; };
+		782FC52E2393C02600344654 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782FC52D2393C02600344654 /* Main.storyboard */; };
 		87CE12131B2043E6003FD10D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87CE12121B2043E6003FD10D /* Images.xcassets */; };
 		87CE12CE1B20472C003FD10D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CE12CD1B20472C003FD10D /* libsqlite3.dylib */; };
 		87CE12D01B204735003FD10D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 87CE12CF1B204735003FD10D /* libz.dylib */; };
@@ -65,16 +60,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		151C267617E165FA003CE479 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		151C267817E16621003CE479 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		6A03C20017B9B5FC004D2B36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6A0B1C2017B9784E00E6406E /* TapPadViewController~iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "TapPadViewController~iPhone.xib"; path = "XIBs/TapPadViewController~iPhone.xib"; sourceTree = "<group>"; };
 		6A0B1C2117B9784E00E6406E /* TapPadViewController~iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "TapPadViewController~iPad.xib"; path = "XIBs/TapPadViewController~iPad.xib"; sourceTree = "<group>"; };
-		6A1FAAC217B9F07C004A090B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "TapPad/Splash Screens/Default-568h@2x.png"; sourceTree = "<group>"; };
-		6A1FAAC317B9F07C004A090B /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "TapPad/Splash Screens/Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
-		6A1FAAC417B9F07C004A090B /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "TapPad/Splash Screens/Default-Portrait~ipad.png"; sourceTree = "<group>"; };
-		6A1FAAC517B9F07C004A090B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "TapPad/Splash Screens/Default.png"; sourceTree = "<group>"; };
-		6A1FAAC617B9F07C004A090B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "TapPad/Splash Screens/Default@2x.png"; sourceTree = "<group>"; };
 		6A1FAADD17B9F0C8004A090B /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Bold.ttf"; path = "Fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		6A1FAAE117B9F328004A090B /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-ExtraBold.ttf"; path = "Fonts/Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
 		6A1FAAF717BA0179004A090B /* ADNActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADNActivity.h; path = Vendor/ADNActivities/ADNActivity.h; sourceTree = "<group>"; };
@@ -114,6 +102,8 @@
 		6A7B39BD17B7908100F088A6 /* Atom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atom.m; sourceTree = "<group>"; };
 		6A7B39C417B7B2E600F088A6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		6AF5052417BA9CBA001F3F6D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		782FC52B2393C00000344654 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		782FC52D2393C02600344654 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		87CE12121B2043E6003FD10D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Tap Pad/Images.xcassets"; sourceTree = "<group>"; };
 		87CE12CD1B20472C003FD10D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		87CE12CF1B204735003FD10D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -150,7 +140,6 @@
 				87CE12E61B2047FC003FD10D /* Social.framework in Frameworks */,
 				87CE12E21B2047D7003FD10D /* Accounts.framework in Frameworks */,
 				87CE12E81B20480C003FD10D /* MessageUI.framework in Frameworks */,
-				151C267917E16621003CE479 /* MobileCoreServices.framework in Frameworks */,
 				87CE12E41B2047E4003FD10D /* ImageIO.framework in Frameworks */,
 				6A03C20117B9B5FC004D2B36 /* QuartzCore.framework in Frameworks */,
 				87CE12E01B2047B8003FD10D /* CoreMotion.framework in Frameworks */,
@@ -162,7 +151,6 @@
 				87CE12D41B204746003FD10D /* libicucore.dylib in Frameworks */,
 				87CE12D01B204735003FD10D /* libz.dylib in Frameworks */,
 				87CE12CE1B20472C003FD10D /* libsqlite3.dylib in Frameworks */,
-				151C267717E165FA003CE479 /* SystemConfiguration.framework in Frameworks */,
 				6A7B398417B7815600F088A6 /* UIKit.framework in Frameworks */,
 				6A7B398617B7815600F088A6 /* Foundation.framework in Frameworks */,
 				6A7B398817B7815600F088A6 /* CoreGraphics.framework in Frameworks */,
@@ -179,19 +167,6 @@
 				6A0B1C2117B9784E00E6406E /* TapPadViewController~iPad.xib */,
 			);
 			name = XIBs;
-			sourceTree = "<group>";
-		};
-		6A0B1C2E17B97F5F00E6406E /* Launch Images */ = {
-			isa = PBXGroup;
-			children = (
-				6A1FAAC217B9F07C004A090B /* Default-568h@2x.png */,
-				6A1FAAC317B9F07C004A090B /* Default-Portrait@2x~ipad.png */,
-				6A1FAAC417B9F07C004A090B /* Default-Portrait~ipad.png */,
-				6A1FAAC517B9F07C004A090B /* Default.png */,
-				6A1FAAC617B9F07C004A090B /* Default@2x.png */,
-			);
-			name = "Launch Images";
-			path = ..;
 			sourceTree = "<group>";
 		};
 		6A1FAADC17B9F0B9004A090B /* Fonts */ = {
@@ -236,8 +211,6 @@
 			children = (
 				F68D35B41B9FE38E005B5C80 /* musicBg.jpg */,
 				87CE12121B2043E6003FD10D /* Images.xcassets */,
-				151C267817E16621003CE479 /* MobileCoreServices.framework */,
-				151C267617E165FA003CE479 /* SystemConfiguration.framework */,
 				6A7B398917B7815600F088A6 /* TapPad */,
 				6A7B398217B7815600F088A6 /* Frameworks */,
 				6A7B398117B7815600F088A6 /* Products */,
@@ -288,7 +261,6 @@
 				6AF5052417BA9CBA001F3F6D /* README.md */,
 				6A1FAAE317B9FB6E004A090B /* Vendor */,
 				6A1FAADC17B9F0B9004A090B /* Fonts */,
-				6A0B1C2E17B97F5F00E6406E /* Launch Images */,
 				6A0B1C1F17B9782E00E6406E /* XIBs */,
 				6A7B39A917B78F3E00F088A6 /* Sounds */,
 				6A7B399217B7815600F088A6 /* AppDelegate.h */,
@@ -300,6 +272,8 @@
 				6A7B39BC17B7908100F088A6 /* Atom.h */,
 				6A7B39BD17B7908100F088A6 /* Atom.m */,
 				6A7B398A17B7815600F088A6 /* Supporting Files */,
+				782FC52B2393C00000344654 /* Launch Screen.storyboard */,
+				782FC52D2393C02600344654 /* Main.storyboard */,
 			);
 			path = TapPad;
 			sourceTree = "<group>";
@@ -400,19 +374,16 @@
 				6A7B39B617B78F3E00F088A6 /* 3.wav in Resources */,
 				6A7B39B717B78F3E00F088A6 /* 4.wav in Resources */,
 				87D6C9EE1B20407C00DF2E3C /* 1.png in Resources */,
+				782FC52C2393C00000344654 /* Launch Screen.storyboard in Resources */,
 				6A7B39B817B78F3E00F088A6 /* 5.wav in Resources */,
 				6A7B39B917B78F3E00F088A6 /* 6.wav in Resources */,
 				6A7B39BA17B78F3E00F088A6 /* 7.wav in Resources */,
 				F68D35B51B9FE38E005B5C80 /* musicBg.jpg in Resources */,
 				87CE12131B2043E6003FD10D /* Images.xcassets in Resources */,
+				782FC52E2393C02600344654 /* Main.storyboard in Resources */,
 				6A0B1C2217B9784E00E6406E /* TapPadViewController~iPhone.xib in Resources */,
 				6A0B1C2317B9784E00E6406E /* TapPadViewController~iPad.xib in Resources */,
-				6A1FAAC717B9F07C004A090B /* Default-568h@2x.png in Resources */,
-				6A1FAAC817B9F07C004A090B /* Default-Portrait@2x~ipad.png in Resources */,
-				6A1FAAC917B9F07C004A090B /* Default-Portrait~ipad.png in Resources */,
-				6A1FAACA17B9F07C004A090B /* Default.png in Resources */,
 				87D6C9EF1B20407C00DF2E3C /* 2.png in Resources */,
-				6A1FAACB17B9F07C004A090B /* Default@2x.png in Resources */,
 				6A1FAADF17B9F0C8004A090B /* Raleway-Bold.ttf in Resources */,
 				6A1FAAE217B9F328004A090B /* Raleway-ExtraBold.ttf in Resources */,
 			);
@@ -522,7 +493,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = RUDNP34A78;
@@ -562,7 +533,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = RUDNP34A78;

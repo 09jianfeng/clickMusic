@@ -108,6 +108,8 @@ static NSInteger seed = 0;
     
     self.shoutoutLabel.text = NSLocalizedString(shoutoutText, nil);
     self.buttonEnclosure.layer.cornerRadius = 10.0;
+    
+    int offset = (self.view.bounds.size.width - (iPhoneCellWidth + 1)* (gridDimension + 1)) / 2;
     for (int j = 0; j < gridDimension; j++) {
         NSMutableArray *arr = [[NSMutableArray alloc] initWithCapacity:gridDimension];
         for (int i = 0; i < gridDimension; i++) {
@@ -119,8 +121,8 @@ static NSInteger seed = 0;
                                iPadCellWidth, iPadCellWidth);
             }
             else {
-                r = CGRectMake(10+(1.+iPhoneCellWidth)*i,
-                               101.+(1.+iPhoneCellWidth)*j,
+                r = CGRectMake(offset+(1.+iPhoneCellWidth)*i,
+                               201.+(1.+iPhoneCellWidth)*j,
                                iPhoneCellWidth,
                                iPhoneCellWidth);
             }
