@@ -34,11 +34,8 @@
 #import "Atom.h"
 #import "ADNActivityCollection.h"
 #import <AudioToolbox/AudioToolbox.h>
-#import "PublicCallFunction.h"
-#import "GDTSplashAd.h"
-#import "GDTMobBannerView.h"
 
-@interface TapPadViewController () <GDTSplashAdDelegate,GDTMobBannerViewDelegate>
+@interface TapPadViewController ()
 {
     SystemSoundID sound0;
     SystemSoundID sound1;
@@ -48,7 +45,6 @@
     SystemSoundID sound5;
     SystemSoundID sound6;
     SystemSoundID sound7;
-    GDTSplashAd *_splash;
 }
 
 @property (nonatomic, strong) NSMutableArray *atoms;
@@ -68,7 +64,6 @@
 @property (nonatomic, assign) NSInteger collisionsLimit;
 @property (nonatomic, assign) NSInteger movesLimit;
 
-@property(nonatomic,retain) GDTMobBannerView *bannerView;//声明一个GDTMobBannerView的实例
 @end
 
 @implementation TapPadViewController
@@ -96,37 +91,6 @@ static NSInteger seed = 0;
         self.collisionsLimit = 100;
         self.movesLimit = 300;
         self.playControlButton.backgroundColor = [UIColor blueColor];
-        
-        //开屏广告初始化---------
-        _splash = [[GDTSplashAd alloc] initWithAppkey:@"1105125629" placementId:@"9030701809870589"];
-        _splash.delegate = self;//设置代理
-        //针对不同设备尺寸设置不同的默认图片，拉取广告等待时间会展示该默认图片。
-        if ([[UIScreen mainScreen] bounds].size.height >= 568.0f) {
-            _splash.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default-568h"]];
-        } else {
-            _splash.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Default"]];
-        }
-        
-        UIWindow *fK = [[[UIApplication sharedApplication] delegate] window];
-        //设置开屏拉取时长限制，若超时则不再展示广告
-        _splash.fetchDelay = 10;
-        //拉取并展示
-        [_splash loadAdAndShowInWindow:fK];
-        
-        //广点通-------------
-        //banner初始化
-        _bannerView = [[GDTMobBannerView alloc] initWithFrame:CGRectMake(0, 0,
-                                                                         GDTMOB_AD_SUGGEST_SIZE_320x50.width,
-                                                                         GDTMOB_AD_SUGGEST_SIZE_320x50.height)
-                                                       appkey:@"1105125629"
-                                                  placementId:@"9070302964601689"];
-        _bannerView.delegate = self; // 设置Delegate
-        _bannerView.currentViewController = self; //设置当前的ViewController
-        _bannerView.interval = 30; //【可选】设置刷新频率;默认30秒
-        _bannerView.isGpsOn = NO; //【可选】开启GPS定位;默认关闭
-        _bannerView.showCloseBtn = YES; //【可选】展示关闭按钮;默认显示
-        _bannerView.isAnimationOn = YES; //【可选】开启banner轮播和展现时的动画效果;默认开启
-        [_bannerView loadAdAndShow]; //加载广告并展示
     }
     return self;
 }
@@ -193,8 +157,6 @@ static NSInteger seed = 0;
     self.playControlButton.hidden = YES;
     [self setPlayButtonTitle:@"暂停"];
     [self loadSounds];
-    
-    [self.view addSubview:_bannerView];
 }
 
 -(void) loadSounds
@@ -436,8 +398,6 @@ static NSInteger seed = 0;
 {
     [self setPlayButtonTitle:@"暂停"];
     self.isPlaying = YES;
-    //后台线程播放
-    [[PublicCallFunction sharedInstance] playBackgroundMusic:@selector(runLoop:) target:self times:600000];
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval: self.period target: self selector: @selector(runLoop:) userInfo: nil repeats: YES];
 }
@@ -700,90 +660,5 @@ static NSInteger seed = 0;
     AudioServicesDisposeSystemSoundID(sound7);
 }
 
-#pragma mark -
-#pragma mark - 广点通开屏广告代理
--(void)splashAdSuccessPresentScreen:(GDTSplashAd *)splashAd
-{
-    NSLog(@"%s",__FUNCTION__);
-}
-
--(void)splashAdFailToPresent:(GDTSplashAd *)splashAd withError:(NSError *)error
-{
-    NSLog(@"%s%@",__FUNCTION__,error);
-}
-
--(void)splashAdClicked:(GDTSplashAd *)splashAd
-{
-    NSLog(@"%s",__FUNCTION__);
-}
-
--(void)splashAdApplicationWillEnterBackground:(GDTSplashAd *)splashAd
-{
-    NSLog(@"%s",__FUNCTION__);
-}
-
--(void)splashAdClosed:(GDTSplashAd *)splashAd
-{
-    NSLog(@"%s",__FUNCTION__);
-}
-
--(void)splashAdWillPresentFullScreenModal:(GDTSplashAd *)splashAd{
-    NSLog(@"splashAdWillPresentFullScreen");
-}
-
--(void)splashAdDidDismissFullScreenModal:(GDTSplashAd *)splashAd{
-    NSLog(@"splashADDidDismissFullScreenModal");
-}
-
-#pragma mark - 广点通banner代理
-// 请求广告条数据成功后调用
-//
-// 详解:当接收服务器返回的广告数据成功后调用该函数
-- (void)bannerViewDidReceived
-{
-    NSLog(@"%s",__FUNCTION__);
-}
-
-// 请求广告条数据失败后调用
-//
-// 详解:当接收服务器返回的广告数据失败后调用该函数
-- (void)bannerViewFailToReceived:(NSError *)error
-{
-    NSLog(@"%s, Error:%@",__FUNCTION__,error);
-}
-
-// 应用进入后台时调用
-//
-// 详解:当点击下载或者地图类型广告时，会调用系统程序打开，
-// 应用将被自动切换到后台
-- (void)bannerViewWillLeaveApplication
-{
-    NSLog(@"%s",__FUNCTION__);
-}
-
-// banner条曝光回调
-//
-// 详解:banner条曝光时回调该方法
-- (void)bannerViewWillExposure
-{
-    NSLog(@"%s",__FUNCTION__);
-}
-
-// banner条点击回调
-//
-// 详解:banner条被点击时回调该方法
-- (void)bannerViewClicked
-{
-    NSLog(@"%s",__FUNCTION__);
-}
-
-/**
- *  banner条被用户关闭时调用
- *  详解:当打开showCloseBtn开关时，用户有可能点击关闭按钮从而把广告条关闭
- */
-- (void)bannerViewWillClose
-{
-    NSLog(@"%s",__FUNCTION__);
-}
 
 @end
